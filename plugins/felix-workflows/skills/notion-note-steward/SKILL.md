@@ -1,11 +1,11 @@
 ---
 name: notion-note-steward
-description: 在已授权的 Notion 工作区中读取、新建、编辑或统一知识树、公司研究、个人项目与日记页面时，维护 Felix Yang 既有的笔记结构与格式规范。
+description: 在 Felix 的 Notion 学科知识树中读取、新建或整理学科笔记时使用；维护既有层级、双语标题、主题色与正文格式。行业研究优先使用 notion-industry-steward。
 ---
 
-# Notion 笔记管家（Notion Note Steward）
+# 学科笔记
 
-用于维护 `Felix 的笔记本`，保留既有的信息架构、页面内容与排版习惯。
+主要用于维护 `Felix 的笔记本` 中的学科知识树，保留既有的信息架构、页面内容与排版习惯。本文件保留公司研究、个人项目与日记的已有格式规则，供相关任务或 `notion-industry-steward` 引用；行业笔记的分类与研究流程由后者负责。
 
 ## 维护入口
 

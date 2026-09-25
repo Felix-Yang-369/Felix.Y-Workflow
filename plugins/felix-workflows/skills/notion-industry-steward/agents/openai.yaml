@@ -1,0 +1,4 @@
+interface:
+  display_name: "行业笔记"
+  short_description: "依据行业 Wiki 的现有层级与真实数据口径，整理行业、细分行业及企业研究笔记"
+  default_prompt: "使用 $notion-industry-steward 整理这篇行业笔记，并保留已有内容、数据库和页面关系。"

@@ -1,7 +1,7 @@
 interface:
-  display_name: "Notion 笔记管家"
-  short_description: "按 Felix 的既有规范整理 Notion 笔记，保留层级、内容与格式"
-  default_prompt: "使用 $notion-note-steward 整理这篇 Notion 笔记，并保留我既有的结构和格式。"
+  display_name: "学科笔记"
+  short_description: "按既有知识树规范整理学科笔记，保留层级、内容与格式"
+  default_prompt: "使用 $notion-note-steward 整理这篇学科笔记，并保留既有的结构和格式。"
 
 policy:
   allow_implicit_invocation: true

@@ -1,4 +1,4 @@
 interface:
-  display_name: "二级学科封面设计"
+  display_name: "学科封面"
   short_description: "按四张工程参考图设计同系列二级学科封面提示词"
   default_prompt: "使用 $secondary-discipline-cover 为这个二级学科设计系列封面提示词。"

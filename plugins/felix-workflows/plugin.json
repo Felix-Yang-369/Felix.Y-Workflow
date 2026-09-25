@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "felix-workflows",
-  "version": "0.3.1+codex.20260925064949",
+  "version": "0.4.0+codex.20260925070039",
   "description": "Felix 的个人知识、课程与日程工作流",
   "author": {
     "name": "Felix Yang"
@@ -10,13 +10,16 @@
     "com.openai": {
       "interface": {
         "displayName": "Felix 工作流",
-        "shortDescription": "维护笔记、课程研究、学科封面与日程",
-        "longDescription": "提供 Notion 笔记整理、Notion 封面制作、二级学科系列封面设计、大学课程评估，以及通过 macOS Apple Calendar 或 Windows Notion Calendar 维护 iCloud 学期日程的五个独立技能。",
+        "shortDescription": "维护学科与行业笔记、封面、公司标识、课程和日程",
+        "longDescription": "提供学科笔记、行业笔记、学科封面、行业封面、公司 Logo、大学课程评估和 iCloud 学期日程管理七项技能。",
         "developerName": "Felix Yang",
         "category": "Productivity",
+        "brandColor": "#102C35",
+        "logo": "./assets/icon.svg",
+        "composerIcon": "./assets/icon.svg",
         "capabilities": [],
         "defaultPrompt": [
-          "使用 $notion-note-steward 整理这篇 Notion 笔记。",
+          "使用 $notion-note-steward 整理这篇学科笔记。",
           "使用 $course-evaluation 综合课程目录、教学大纲、软件与教师评价来评估课程。",
           "使用 $schedule-management 在当前设备上核对并整理 iCloud 学术日历。"
         ]
