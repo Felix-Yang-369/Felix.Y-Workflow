@@ -10,7 +10,7 @@
 | `notion-cover-designer` | 为需要封面的 Notion 页面搜索、生成和应用封面 | 封面任务 |
 | `secondary-discipline-cover` | 按四张参考图的视觉语言设计二级学科系列封面提示词 | 指定海报风格时 |
 | `course-evaluation` | 综合课程目录、教学大纲、软件与教师评价，形成有证据的选课建议 | 课程研究与比较 |
-| `schedule-management` | 按权威来源核对和维护 Apple Calendar 的课程、考试、周次与节假日 | 学期日程管理 |
+| `schedule-management` | 按权威来源，通过 macOS Apple Calendar 或 Windows Notion Calendar 维护同一组 iCloud 课程、考试、周次与节假日 | 跨设备学期日程管理 |
 
 每项工作保留为独立 Skill。二级学科封面可为封面设计提供风格参考；仅在用户要求出图时生成图片，仅在用户要求应用到 Notion 时更改页面。封面设计师通常不在图内放文字，二级学科海报需要准确标题时应明确提出并检查成品。
 
@@ -30,6 +30,8 @@ plugins/felix-workflows/
 ```
 
 每个 Skill 的主要规则在自己的 `SKILL.md`；详细规则、模板和参考图在同目录的 `references/`、`assets/`；界面名称在 `agents/openai.yaml`。修改时保留这些相对路径。
+
+`schedule-management` 以 iCloud 日历为共享数据层：macOS 默认操作 Apple Calendar，Windows 操作已连接 iCloud 的 Notion Calendar。Notion 数据库日历不是这些课程日历的替代品；跨客户端写入后需要等待同步并检查重复事件。
 
 ## 在另一台电脑使用
 

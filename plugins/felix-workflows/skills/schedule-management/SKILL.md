@@ -1,17 +1,26 @@
 ---
 name: schedule-management
-description: Manage Felix Yang's academic schedule in Apple Calendar for any university term. Use when building a semester calendar or auditing, creating, correcting, and reconciling lectures, discussions, labs, midterms, finals, quizzes, academic-week labels, holidays, cancellations, and campus activities from Registrar, Schedule Builder, Canvas, syllabi, or instructor announcements. Enforces canonical names, calendar categories, course-specific meeting bounds, daily missing-event audits, Week 0/Week 1-10/Final Week handling, holiday cancellations, Midterm replacement of Lecture, concise Final naming, exam-source verification, recurrence scope, deduplication, and post-write verification.
+description: Manage Felix Yang's iCloud-backed academic calendars from Apple Calendar on macOS or Notion Calendar on Windows. Use when building a university-term calendar or auditing, creating, correcting, and reconciling lectures, discussions, labs, exams, academic-week labels, holidays, cancellations, and campus activities from authoritative academic sources. Enforces canonical names, calendar categories, meeting bounds, recurrence scope, deduplication, synchronization-aware verification, and device-appropriate execution.
 ---
 
 # 日程管理 SKILL
 
-Use this skill to turn current-term academic sources into a clean, auditable Apple Calendar.
+Use this skill to turn current-term academic sources into clean, auditable iCloud calendars. Apple Calendar on macOS and Notion Calendar on Windows are two clients for the same calendar data; they are not separate schedule sources.
 
 ## Load the governing rules
 
 Read [references/calendar-policy.md](references/calendar-policy.md) before making calendar changes. Treat it as the user's canonical policy and this skill as the execution workflow. The user's newest explicit correction overrides both.
 
 Read [references/semester-workflow.md](references/semester-workflow.md) when building or repairing a whole term, calculating academic weeks, or reconciling holidays and exams.
+
+Read [references/notion-calendar-windows.md](references/notion-calendar-windows.md) before reading or changing calendars through Notion Calendar on Windows.
+
+## Select the execution client
+
+- On macOS, prefer Apple Calendar unless the user asks to use Notion Calendar or Apple Calendar is unavailable.
+- On Windows, use the Notion Calendar desktop app or web app with the user's connected iCloud account. Write to the named iCloud calendars such as `专业课`, `讨论`, or `考试`; do not substitute a Notion database calendar.
+- Treat the user's observed two-to-three-second iCloud synchronization delay as a normal baseline, not a guarantee. Do not immediately repeat a write just because another client has not refreshed yet.
+- If the active client cannot expose a required field or an unambiguous recurring-event scope, stop that part of the mutation and report the limitation instead of approximating it.
 
 ## Source facts in this order
 
@@ -56,11 +65,10 @@ Treat tentative language such as “好像少了”, “可能”, or “是不�
 6. For a recurring correction, determine whether it applies to one occurrence, future occurrences, or the entire series.
 7. Before deleting events through the UI, present the exact deletion list and obtain action-time confirmation.
 8. Apply confirmed additions and corrections.
-9. Verify the result in Apple Calendar's main view and by targeted search. Check Week 0, each holiday, Week 10, every exam, and every Midterm date for a duplicate Lecture separately.
+9. Verify the result in the active calendar client's main view and by targeted search. When another synchronized client is available, wait for synchronization and cross-check there as well. Check Week 0, each holiday, Week 10, every exam, and every Midterm date for a duplicate Lecture separately.
 10. Report completed changes, intentionally absent meetings, and unresolved TBA/conflicting facts.
 
 ## Completion gate
 
-Finish only when titles, calendars, all-day status, dates, times, rooms, timezone, recurrence end, holiday exceptions, and duplicates have all been checked. Leave uncertain exam events out rather than creating placeholders that look confirmed.
-
+Finish only when titles, target iCloud calendars, all-day status, dates, times, rooms, timezone, recurrence end, holiday exceptions, synchronization state, and duplicates have all been checked. Leave uncertain exam events out rather than creating placeholders that look confirmed.
 

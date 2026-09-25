@@ -35,7 +35,7 @@ Use explicit dates for exceptions and exams. Record `TBA` internally for unresol
 
 ## Recurrence reconciliation
 
-For each lecture/discussion family, expand expected occurrences between its source-backed first and last dates. Remove dates that are official holidays or explicit course cancellations. Compare this expanded set with Apple Calendar, paying special attention to:
+For each lecture/discussion family, expand expected occurrences between its source-backed first and last dates. Remove dates that are official holidays or explicit course cancellations. Compare this expanded set with the active client for the target iCloud calendars, paying special attention to:
 
 - Week 0 sections that start later than the lecture.
 - Thanksgiving week and other holiday exceptions.
@@ -51,7 +51,7 @@ When the user says today's schedule seems incomplete:
 1. Resolve “today” in `America/Los_Angeles`.
 2. List every lecture, discussion, and lab whose normal weekday matches today.
 3. Exclude meetings before `first_date`, after `last_date`, on official holidays, or canceled by a course announcement.
-4. Compare the remaining expected meetings with Apple Calendar by normalized title, start, end, and calendar.
+4. Compare the remaining expected meetings with the active calendar client by normalized title, start, end, and target iCloud calendar.
 5. Add only genuinely missing events. Report intentionally absent meetings with the source-backed reason instead of treating them as omissions.
 
 ## Exam reconciliation
@@ -79,5 +79,4 @@ Under the user's calendar policy, a confirmed Midterm always replaces that cours
 - No Midterm class period also contains the corresponding Lecture event.
 - Final titles end in `Final`, never `Final Exam`.
 - TBA exams are reported, not guessed.
-
 
