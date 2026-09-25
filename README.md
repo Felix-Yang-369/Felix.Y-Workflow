@@ -34,11 +34,13 @@ plugins/felix-workflows/
     schedule-management/
 ```
 
-每个 Skill 的主要规则在自己的 `SKILL.md`；详细规则、模板和参考图在同目录的 `references/`、`assets/`；界面名称在 `agents/openai.yaml`。修改时保留这些相对路径。
+每个 Skill 的主要规则在自己的 `SKILL.md`；详细规则、模板和参考图在同目录的 `references/`、`assets/`；界面名称、独立图标和主题色在 `agents/openai.yaml`。修改时保留这些相对路径。
 
 **命名约定：**`skills/` 下的目录名和 `SKILL.md` 中的 `name` 保持英文短名，便于跨设备安装和用 `$name` 调用；`agents/openai.yaml` 的 `interface.display_name` 使用中文或中英双语。界面上显示「学科笔记、行业笔记、学科封面、行业封面、公司 Logo」，技术标识继续沿用已有名称。
 
 插件图标在 `assets/icon.svg`，两个插件清单都引用同一文件。它是原创的开卷与连接点图形；修改图标后更新清单中的路径并在小尺寸下检查辨识度。
+
+每项 Skill 也有独立的 `assets/icon.svg`。`agents/openai.yaml` 的 `icon_small`、`icon_large` 指向该文件，`brand_color` 设置界面强调色。七个图标共用深色底与简洁线条，各自使用笔记、封面、标识、评估或日历的图形来区分任务。
 
 `schedule-management` 以 iCloud 日历为共享数据层：macOS 默认操作 Apple Calendar，Windows 操作已连接 iCloud 的 Notion Calendar。Notion 数据库日历不是这些课程日历的替代品；跨客户端写入后需要等待同步并检查重复事件。
 

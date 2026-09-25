@@ -1,4 +1,7 @@
 interface:
   display_name: "行业封面"
   short_description: "为行业与细分行业页面制作并应用主题明确、风格连贯的封面"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#D5A686"
   default_prompt: "使用 $notion-cover-designer 为这些行业页面制作并应用风格一致的封面。"

@@ -1,6 +1,9 @@
 interface:
   display_name: "学科笔记"
   short_description: "按既有知识树规范整理学科笔记，保留层级、内容与格式"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#77BFC0"
   default_prompt: "使用 $notion-note-steward 整理这篇学科笔记，并保留既有的结构和格式。"
 
 policy:
