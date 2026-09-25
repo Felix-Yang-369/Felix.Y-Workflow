@@ -1,0 +1,6 @@
+interface:
+  display_name: "Course evaluation"
+  short_description: "Evaluate courses from primary materials and reviews"
+  default_prompt: "Use $course-evaluation to evaluate this course from its catalog, syllabus, software, and instructor reviews."
+
+
