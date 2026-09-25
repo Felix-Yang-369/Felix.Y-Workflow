@@ -1,0 +1,4 @@
+interface:
+  display_name: "Notion 封面设计师"
+  short_description: "为 Felix 的 Notion 知识页面制作并应用风格一致、主题清晰的系列封面"
+  default_prompt: "使用 $notion-cover-designer 为这些 Notion 知识页面制作并应用风格一致的封面。"

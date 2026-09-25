@@ -1,0 +1,16 @@
+# Local and generated files
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.zip
+
+# Credentials and local application data
+.env
+.env.*
+*.key
+*.pem
+notion.db
+*.sqlite
+*.sqlite3
+.codex/plugins/cache/

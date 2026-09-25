@@ -1,0 +1,26 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "felix-workflows",
+  "version": "0.1.0",
+  "description": "Felix 的个人笔记维护与学科封面工作流",
+  "author": {
+    "name": "Felix Yang"
+  },
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Felix 工作流",
+        "shortDescription": "维护笔记并设计学科封面",
+        "longDescription": "提供 Notion 笔记整理、Notion 封面制作及二级学科系列封面设计三个独立技能。",
+        "developerName": "Felix Yang",
+        "category": "Productivity",
+        "capabilities": [],
+        "defaultPrompt": [
+          "使用 $notion-note-steward 整理这篇 Notion 笔记。",
+          "使用 $notion-cover-designer 为这些 Notion 页面制作封面。",
+          "使用 $secondary-discipline-cover 设计二级学科系列封面提示词。"
+        ]
+      }
+    }
+  }
+}
