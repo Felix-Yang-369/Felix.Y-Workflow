@@ -31,6 +31,8 @@ plugins/felix-workflows/
 
 每个 Skill 的主要规则在自己的 `SKILL.md`；详细规则、模板和参考图在同目录的 `references/`、`assets/`；界面名称在 `agents/openai.yaml`。修改时保留这些相对路径。
 
+**命名约定：**`skills/` 下的目录名和 `SKILL.md` 中的 `name` 保持稳定的英文短名，便于跨设备安装和用 `$name` 调用；`agents/openai.yaml` 的 `interface.display_name` 可用中文或中英双语。当前五项显示名称统一为中文。需要更名时优先改显示名称，避免让已有调用语句失效。
+
 `schedule-management` 以 iCloud 日历为共享数据层：macOS 默认操作 Apple Calendar，Windows 操作已连接 iCloud 的 Notion Calendar。Notion 数据库日历不是这些课程日历的替代品；跨客户端写入后需要等待同步并检查重复事件。
 
 ## 在另一台电脑使用

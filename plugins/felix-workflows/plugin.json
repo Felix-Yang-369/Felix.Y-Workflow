@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "felix-workflows",
-  "version": "0.3.0",
+  "version": "0.3.1+codex.20260925064949",
   "description": "Felix 的个人知识、课程与日程工作流",
   "author": {
     "name": "Felix Yang"
@@ -17,8 +17,6 @@
         "capabilities": [],
         "defaultPrompt": [
           "使用 $notion-note-steward 整理这篇 Notion 笔记。",
-          "使用 $notion-cover-designer 为这些 Notion 页面制作封面。",
-          "使用 $secondary-discipline-cover 设计二级学科系列封面提示词。",
           "使用 $course-evaluation 综合课程目录、教学大纲、软件与教师评价来评估课程。",
           "使用 $schedule-management 在当前设备上核对并整理 iCloud 学术日历。"
         ]

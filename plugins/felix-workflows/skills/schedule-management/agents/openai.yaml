@@ -1,5 +1,5 @@
 interface:
-  display_name: "日程管理 SKILL"
+  display_name: "日程管理"
   short_description: "跨 macOS 与 Windows 维护 iCloud 课程、考试、周次与节假日"
-  default_prompt: "Use $schedule-management to audit and update my iCloud academic calendars from the appropriate client on this device."
+  default_prompt: "使用 $schedule-management 在当前设备上核对并整理我的 iCloud 学术日历。"
 
