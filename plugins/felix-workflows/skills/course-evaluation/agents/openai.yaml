@@ -1,7 +1,7 @@
 interface:
   icon_small: "./assets/icon.svg"
   icon_large: "./assets/icon.svg"
-  brand_color: "#95BE90"
+  brand_color: "#238956"
   display_name: "课程评估"
   short_description: "依据课程目录、教学大纲、软件与教师评价研究选课"
   default_prompt: "使用 $course-evaluation 综合课程目录、教学大纲、软件和教师评价来评估这门课程。"

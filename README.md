@@ -40,7 +40,9 @@ plugins/felix-workflows/
 
 插件图标在 `assets/icon.svg`，两个插件清单都引用同一文件。它是原创的开卷与连接点图形；修改图标后更新清单中的路径并在小尺寸下检查辨识度。
 
-每项 Skill 也有独立的 `assets/icon.svg`。`agents/openai.yaml` 的 `icon_small`、`icon_large` 指向该文件，`brand_color` 设置界面强调色。七个图标共用深色底与简洁线条，各自使用笔记、封面、标识、评估或日历的图形来区分任务。
+每项 Skill 也有独立的 `assets/icon.svg`。`agents/openai.yaml` 的 `icon_small`、`icon_large` 指向该文件，`brand_color` 设置界面强调色。七个图标使用不同的鲜明底色和适合小尺寸识别的粗线条图形：书本、工厂、学科画框、行业画框、品牌徽记、勾选卡片和日历。
+
+![七项 Skill 的图标预览](plugins/felix-workflows/assets/skill-icons-preview.png)
 
 `schedule-management` 以 iCloud 日历为共享数据层：macOS 默认操作 Apple Calendar，Windows 操作已连接 iCloud 的 Notion Calendar。Notion 数据库日历不是这些课程日历的替代品；跨客户端写入后需要等待同步并检查重复事件。
 

@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "felix-workflows",
-  "version": "0.4.1+codex.20260925215259",
+  "version": "0.4.2+codex.20260925220320",
   "description": "Felix 的个人知识、课程与日程工作流",
   "author": {
     "name": "Felix Yang"
