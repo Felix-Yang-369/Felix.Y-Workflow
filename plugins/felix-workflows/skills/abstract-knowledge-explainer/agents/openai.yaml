@@ -1,0 +1,7 @@
+interface:
+  display_name: "抽象知识讲解"
+  short_description: "从具体问题出发，逐步建立抽象概念与严谨定义"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#6546B8"
+  default_prompt: "使用 $abstract-knowledge-explainer 从简单例子出发，讲清这个抽象概念的动机、定义和直觉。"

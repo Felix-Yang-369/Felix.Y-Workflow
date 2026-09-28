@@ -13,6 +13,8 @@
 | 公司 Logo `$company-logo` | 优先选用官方现成图，否则参考官方素材生成品牌色背景的 16:9 Logo 横图；也支持方形图标和明确要求的原创设计 | 公司研究页面封面、页面图标或原创品牌设计 |
 | `course-evaluation` | 综合课程目录、教学大纲、软件与教师评价，形成有证据的选课建议 | 课程研究与比较 |
 | `schedule-management` | 按权威来源，通过 macOS Apple Calendar 或 Windows Notion Calendar 维护同一组 iCloud 课程、考试、周次与节假日 | 跨设备学期日程管理 |
+| 抽象知识讲解 `$abstract-knowledge-explainer` | 从具体问题和旧知识出发，逐步建立抽象概念、正式定义与直觉 | 抽象代数、信息论、计算理论、拓扑、理论机器学习 |
+| 具象知识讲解 `$concrete-knowledge-explainer` | 用结构与动态流程图解系统，再解释原理、模型和失效情况 | 机械工程、电路、硬件、机器人、制造 |
 
 Notion 相关的五项在技能列表里使用中文名称，不以「Notion」开头。英文目录名和 `$name` 是稳定的调用标识，暂不改动现有标识，以免旧提示词失效。学科封面仅在用户要求出图时生成图片，仅在用户要求应用到页面时更改页面；行业封面保留已有封面，除非用户要求更换。公司 Logo 默认指现有公司的官方标识制作的横向展示图，不代表重新设计其品牌。
 
@@ -32,6 +34,8 @@ plugins/felix-workflows/
     company-logo/
     course-evaluation/
     schedule-management/
+    abstract-knowledge-explainer/
+    concrete-knowledge-explainer/
 ```
 
 每个 Skill 的主要规则在自己的 `SKILL.md`；详细规则、模板和参考图在同目录的 `references/`、`assets/`；界面名称、独立图标和主题色在 `agents/openai.yaml`。修改时保留这些相对路径。
@@ -40,9 +44,11 @@ plugins/felix-workflows/
 
 插件图标在 `assets/icon.svg`，两个插件清单都引用同一文件。它是原创的开卷与连接点图形；修改图标后更新清单中的路径并在小尺寸下检查辨识度。
 
-每项 Skill 也有独立的 `assets/icon.svg`。`agents/openai.yaml` 的 `icon_small`、`icon_large` 指向该文件，`brand_color` 设置界面强调色。七个图标使用不同的鲜明底色和适合小尺寸识别的粗线条图形：书本、工厂、学科画框、行业画框、品牌徽记、勾选卡片和日历。
+每项 Skill 也有独立的 `assets/icon.svg`。`agents/openai.yaml` 的 `icon_small`、`icon_large` 指向该文件，`brand_color` 设置界面强调色。九个图标使用不同的底色和适合小尺寸识别的粗线条图形。
 
-![七项 Skill 的图标预览](plugins/felix-workflows/assets/skill-icons-preview.png)
+原有七项 Skill 的图标预览：![原有七项 Skill 的图标预览](plugins/felix-workflows/assets/skill-icons-preview.png)。新增的两个图标分别用汇聚的节点和相连的部件表达抽象与具象讲解。
+
+抽象知识讲解适合“概念本身难以看见”的问题，依次解释现实问题、动机、旧方法的困难、与已知概念的关系、抽象过程、正式定义，再检查直觉。具象知识讲解适合“系统如何构造和运作”的问题，依次展示结构、部件、运动或信息/能量/受力流程、原理、数学模型及应用与失效。两者可按主题混用，不必机械套用全部步骤。
 
 `schedule-management` 以 iCloud 日历为共享数据层：macOS 默认操作 Apple Calendar，Windows 操作已连接 iCloud 的 Notion Calendar。Notion 数据库日历不是这些课程日历的替代品；跨客户端写入后需要等待同步并检查重复事件。
 
