@@ -1,5 +1,7 @@
 # 参数化提示词模板
 
+A–C 仅适用于选定的工程图解海报系列。已有认可系列时使用 D；用户要求非电影感、右侧标题或更少元素时，不拼接 A–C 中冲突的默认语句。
+
 填入 `TITLE`、`HERO`、`DIAGRAMS`、`ACCENT`、`MICROCOPY` 和 `USE`。图像模型能否可靠生成文字取决于具体工具；默认使用**无字底图提示词＋精确文字叠加说明**。用户明确希望一次生成带字海报时，使用第二版并校对文字。
 
 ## A. 无字底图，供精确排字
@@ -27,3 +29,15 @@ This will also be cropped into a shallow Notion cover and gallery card. Keep any
 ```
 
 若文字不是用户明确要求，选 A 版并移除“后期文字规格”。如主题较抽象，`HERO` 可改为一个有物理质感的模型、标本或场景；不要强加电路板、芯片、发动机或起重机。
+
+## D. 已认可系列与局部修改
+
+```text
+Use the provided approved image as the editing reference for [TOPIC].
+Requested change only: [DELTA].
+Preserve: [approved title text and placement unless targeted, composition, subject identity, element count, background, natural material colors, lighting, aspect ratio].
+Series settings: [approved style and crop-safe layout].
+Apply the requested change without introducing a new composition, cinematic treatment, decorative labels, or unrelated elements.
+```
+
+`DELTA` 写具体变更，如“仅把绿色强调色换成紫色，保留主体自然颜色”。先看参考图再编辑，完成后与参考对照；上述保留要求不是已经验证的结果。若同系列新图而非修改旧图，沿用固定项，仅替换已确定的单张变量。
