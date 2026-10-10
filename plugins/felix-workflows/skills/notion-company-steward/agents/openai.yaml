@@ -1,7 +1,7 @@
 interface:
   display_name: "公司笔记"
-  short_description: "优化公司概览与现有属性，核实业务、规模和母子公司关系"
+  short_description: "逐页补齐公司概览与授权属性，核验目标集合与资源"
   icon_small: "./assets/icon.svg"
   icon_large: "./assets/icon.svg"
   brand_color: "#2563EB"
-  default_prompt: "使用 $notion-company-steward 优化公司简短概览并补全现有属性，保留内容与资源，列出需审核的合并项。"
+  default_prompt: "使用 $notion-company-steward 优化指定公司集合，逐页补齐简短概览和已授权的现有属性，持续完成全部目标并核验，保留内容与资源，列出需审核的合并项。"

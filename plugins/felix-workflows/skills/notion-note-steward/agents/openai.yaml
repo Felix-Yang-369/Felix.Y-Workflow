@@ -1,10 +1,10 @@
 interface:
   display_name: "学科笔记"
-  short_description: "按既有知识树规范整理学科笔记，保留层级、内容与格式"
+  short_description: "完整检查学科笔记，补齐知识与例子并验收内容和布局"
   icon_small: "./assets/icon.svg"
   icon_large: "./assets/icon.svg"
   brand_color: "#255CE8"
-  default_prompt: "使用 $notion-note-steward 整理这篇学科笔记，并保留既有的结构和格式。"
+  default_prompt: "使用 $notion-note-steward 完整优化这篇学科笔记，先检查全部章节，补齐必要知识与例子，在授权范围内持续完成并验证；保留有效资源与既有格式，流程图只显示渲染图。"
 
 policy:
   allow_implicit_invocation: true

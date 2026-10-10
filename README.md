@@ -117,3 +117,10 @@ codex plugin add felix-workflows@felix-workflows
 codex plugin marketplace upgrade felix-workflows
 codex plugin add felix-workflows@felix-workflows
 ```
+
+## 0.4.14：完整覆盖、内容深度与完成验收
+
+- 学科、行业和公司笔记统一读取[完整覆盖与完成标准](plugins/felix-workflows/skills/notion-note-steward/references/completion-workflow.md)，完整检查指定范围，按质量补齐，分批执行到完成。
+- 承接已接受方案，交付前检查遗漏与前后一致性，分别报告内容回读和视觉验收；保留只读建议、局部任务及公司简短概览边界。
+- 合并本机已有的右侧学科联系、60:40 双栏、H1 全宽与流程图 Display 规则，保留 0.4.13 的父页模板、学习进度和十三项技能。
+- 增加整篇、整库、局部、写入失败和视觉受限等验收场景。静态检查不保证每次模型输出都达标，后续真实使用仍需按覆盖清单验收。
