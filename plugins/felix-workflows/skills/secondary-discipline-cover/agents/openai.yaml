@@ -1,7 +1,7 @@
 interface:
   display_name: "学科封面"
-  short_description: "按四张工程参考图设计同系列二级学科封面提示词"
+  short_description: "平面标题与适度写实背景的学科图解封面"
   icon_small: "./assets/icon.svg"
   icon_large: "./assets/icon.svg"
   brand_color: "#7742D8"
-  default_prompt: "使用 $secondary-discipline-cover 为这个二级学科设计系列封面提示词。"
+  default_prompt: "使用 $secondary-discipline-cover 为这个学科制作系列封面，采用平面标题、无标题装饰横线和适度写实的背景。"

@@ -1,6 +1,6 @@
 interface:
   display_name: "行业笔记"
-  short_description: "依据行业 Wiki 的现有层级与真实数据口径，整理行业、细分行业及企业研究笔记"
+  short_description: "依据行业 Wiki 的现有层级与真实数据口径，整理行业分类、层级与行业正文"
   icon_small: "./assets/icon.svg"
   icon_large: "./assets/icon.svg"
   brand_color: "#EC6024"

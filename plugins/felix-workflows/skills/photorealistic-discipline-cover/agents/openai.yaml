@@ -1,0 +1,7 @@
+interface:
+  display_name: "写实风格学科封面"
+  short_description: "以真实场景和材质生成电影感学科封面, 左上角英文大写标题"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#D97706"
+  default_prompt: "使用 $photorealistic-discipline-cover 为这个学科生成写实摄影风格的 16:9 封面, 英文大写标题放在左上角。"

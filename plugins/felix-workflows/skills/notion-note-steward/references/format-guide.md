@@ -54,6 +54,32 @@ ii. **Example 示例:**<br>示例内容
 
 适用于学科、软件概念、工具和编程语言。
 
+### 学科父页模板
+
+包含分支学科数据库的学科父页，正文开头按以下顺序排列：
+
+1. 第一行是未编号的一级标题 `INTRODUCTION 导论`，使用该页主题背景色。
+2. 下一块紧接现有分支学科数据库，保留它的数据库身份、父子关系、视图和数据。
+3. 数据库之后再放蓝色二级标题 `A、B、C` 及各节正文，标题名称和数量按内容需要确定。
+
+```text
+# INTRODUCTION 导论: {color="本页主题色_bg"}
+[现有分支学科数据库块，原样保留]
+## A. Overview 概述: {color="blue"}
+### a. Definition 定义: {color="orange"}
+定义与定位等内容
+## B. Core Questions 核心问题: {color="blue"}
+核心问题等内容
+## C. Related Disciplines 相关学科: {color="blue"}
+相关学科等内容
+```
+
+方括号一行仅表示块的位置，不是可写入 Notion 的正文；实际操作须使用读取到的原生数据库块，不能用文字或链接代替。不要在 INTRODUCTION 与数据库之间插入概述、定义、二级标题或其他说明，也不要仅为套用模板新建数据库。
+
+重排后核对前三部分的顺序，并确认分支数据库和原有内容均保留。这项模板用于学科父页；公司研究和行业 Wiki 仍使用各自的专用架构。
+
+### 专题正文页
+
 以下保留原始结构示例，便于识别历史页面。新写内容的大小写、配色和列表标签仍按上方规则执行；例如新 H1 使用全大写英文，新列表项加粗标签并在块内换行。
 
 ```text
@@ -69,7 +95,7 @@ ii. **Example 示例:**<br>示例内容
 1. **Term 术语:**
 ```
 
-页面本身是分类节点时，可在简介附近放置内嵌分支数据库。不要仅为了外观一致而新建数据库。
+没有分支学科数据库的专题正文页沿用实际章节结构，不需要套用父页模板或新建数据库。
 
 参考页面（ID 保持原样）：
 
@@ -79,89 +105,19 @@ ii. **Example 示例:**<br>示例内容
 
 ## 公司研究页面
 
-适用于公司、企业集团和行业参与者。
+专用规则使用 [公司笔记管家](../../notion-company-steward/SKILL.md)，以下保留旧链接入口。
 
 ### 数据库字段
 
-| 字段名（保留原名） | 要求 |
-|---|---|
-| `COMPANY 企业` | 标题属性 |
-| `WEBSITE 官网` | URL 属性，使用公司官方企业主页 |
-| `INDUSTRY 行业` | 以实际数据库结构为准 |
-| `DOMAIN 领域` | 默认视图隐藏，保留字段 |
-| `HEADQUARTERS 总部` | 国家或地区＋都市圈 |
-| `FOUNDED 成立` | 默认视图隐藏，保留字段 |
-| `FOUNDER 创始人` | 以实际数据库结构为准 |
-| `LEADER 领导人` | 默认视图隐藏，保留字段 |
-| `OWNERSHIP 所有制` | 默认视图隐藏，保留字段 |
-| `PRODUCTS 产品` | 以实际数据库结构为准 |
-| `DESCRIPTION 简介` | 以实际数据库结构为准 |
-| `TITLE 称号` | 以实际数据库结构为准 |
-
-**总部格式**：例如 `美国湾区`、`美国洛杉矶`、`中国上海`。不要只填城市、街道或办公楼地址。经营中心跨越多个行政区时，优先使用通行都市圈名称。
-
-**隐藏与删除不同**：默认视图隐藏的四个字段仍保留在数据库结构中；需要时可在比较、治理或研究完整性视图里显示。
-
-**复用历史字段**：历史数据库已有名称不同但含义相同的属性时，单页修改应复用。未经数据库整体迁移授权，不重命名共享属性，也不新建重复属性。
-
-**官网字段**：使用公司官方企业主页，不用产品页、新闻、社交账号或第三方资料页代替。表格视图保留此属性；画廊或看板中若显得杂乱，可以隐藏。添加属性本身不代表获得批量研究和补全缺失网址的授权。
+见 [企业字段规范](../../notion-company-steward/references/company-database-fields.md) 与 [历史字段复用](../../notion-company-steward/references/company-guide.md#数据库字段)。
 
 ### 公司品牌配色
 
-- 公司页面全部 H1 使用本笔记主题色作为文本背景色，包括简介、业务板块、商业模式、组织与经营。
-- 先用本笔记已定义或使用过的主题色；没有时，从相邻同公司或明确适用于本主题的笔记中查找已有定义。以下品牌取色规则仅在两处均无定义、需要新确定颜色时使用。
-- 颜色依据母公司官方视觉形象、企业 Logo 或公开品牌规范，不从产品线、临时活动、封面图、管理者照片或第三方设计推断。
-- 多品牌控股集团默认使用母集团企业色，除非页面明确研究的是某个子公司。
-- 映射到最接近的 Notion 预设背景色：`red_bg`、`orange_bg`、`yellow_bg`、`green_bg`、`blue_bg`、`purple_bg`、`pink_bg`、`brown_bg`、`gray_bg`。
-- 保证可读性。官方配色为黑、白、金属色或其他不受支持的颜色时，使用 `gray_bg` 或最接近且可辨认的企业强调色。
-- 缺乏可靠品牌依据，且本笔记与相邻同主题笔记都无配色定义时，说明缺少依据并确认颜色；不直接沿用无关公司或行业分类色。
-- 不为配合主题色而更改固定文字颜色：H2 蓝色、H3 橙色、H4 黄色。
+见 [公司品牌配色](../../notion-company-steward/references/company-guide.md#公司品牌配色)。
 
-### 建议正文结构
+### 公司研究模板
 
-这是章节结构示例。实际新增列表项应使用加粗双语标签、块内换行与真正的 Notion 编号列表；`NOTE_THEME_COLOR_bg` 需要替换为实际预设背景色。
-
-```text
-# I. INTRODUCTION 简介: {color="NOTE_THEME_COLOR_bg"}
-## A. Overview 概述:
-### a. Definition 定义:
-1. Definition 定义:
-2. Position 定位:
-### b. Development 发展:
-1. Foundation 创立:
-2. Milestones 里程碑:
-3. Current Stage 当前阶段:
-
-# II. BUSINESS SEGMENTS 业务板块: {color="NOTE_THEME_COLOR_bg"}
-## A. First Segment 第一板块:
-## B. Second Segment 第二板块:
-
-# III. BUSINESS MODEL 商业模式: {color="NOTE_THEME_COLOR_bg"}
-## A. Customers 客户:
-### a. Customer Segments 客户群体:
-## B. Revenue Model 收入模式:
-### a. Revenue Sources 收入来源:
-## C. Value Chain 价值链:
-### a. Industry Position 产业链位置:
-
-# IV. ORGANIZATION & PERFORMANCE 组织与经营: {color="NOTE_THEME_COLOR_bg"}
-## A. Governance 公司治理:
-### a. Leadership 管理层:
-### b. Ownership 股权结构:
-## B. Performance 经营表现:
-### a. Business Mix 业务结构:
-### b. Key Metrics 核心指标:
-```
-
-已有罗马数字正文列表继续保留。数据库属性放在数据库里，除非正文需要解释或上下文，否则不重复抄写。
-
-只有实际存在图片或第二个信息面板时才使用双栏布局，不添加占位图片。
-
-参考页面：
-
-- JD 京东集团：`275ab59a-584f-80dd-b328-c03ed2775f9b`
-- HUAWEI 华为：`26bab59a-584f-8094-8f13-c6513f65081d`
-- KERRY 嘉里集团：`388ab59a-584f-808b-a8a4-d7b9d6747e5e`
+见 [详细公司研究模板](../../notion-company-steward/references/company-guide.md#公司研究模板)。简短概览任务遵循公司 skill 主文件，不强制填满详细模板。
 
 ## 个人项目页面
 

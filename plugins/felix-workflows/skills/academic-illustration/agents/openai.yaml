@@ -1,0 +1,7 @@
+interface:
+  display_name: "学科插图"
+  short_description: "为学科笔记选择和制作帮助理解概念的插图，放在对应知识点右侧"
+  default_prompt: "使用 $academic-illustration 分析这篇学科笔记，选择适合放在右侧的实物图、辅助示意或概念讲解图。"
+
+policy:
+  allow_implicit_invocation: true

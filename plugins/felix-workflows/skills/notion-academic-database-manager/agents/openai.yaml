@@ -1,0 +1,10 @@
+interface:
+  display_name: "学科知识库管理规范"
+  short_description: "统一学科知识库的三视图、卡片预览、打开方式与核心属性，保留内容并验收"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#6D28D9"
+  default_prompt: "使用 $notion-academic-database-manager 检查这组学科知识库的视图、卡片、页面打开方式和字段，并按我的授权范围整理。"
+
+policy:
+  allow_implicit_invocation: true

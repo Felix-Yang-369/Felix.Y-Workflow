@@ -1,6 +1,6 @@
 {
   "name": "felix-workflows",
-  "version": "0.4.2+codex.20260925220320",
+  "version": "0.4.12",
   "description": "Felix \u7684\u4e2a\u4eba\u77e5\u8bc6\u3001\u8bfe\u7a0b\u4e0e\u65e5\u7a0b\u5de5\u4f5c\u6d41",
   "author": {
     "name": "Felix Yang"
@@ -8,8 +8,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Felix \u5de5\u4f5c\u6d41",
-    "shortDescription": "维护学科与行业笔记、封面、公司标识、课程和日程",
-    "longDescription": "提供学科笔记、行业笔记、学科封面、行业封面、公司 Logo、大学课程评估和 iCloud 学期日程管理七项技能。",
+    "shortDescription": "维护学科与行业笔记、插图、封面、公司标识、课程和日程",
+    "longDescription": "提供学科知识库管理规范、学科笔记、学科插图、行业笔记、公司笔记、学科封面、写实风格学科封面、行业封面、公司 Logo、大学课程评估和 iCloud 学期日程管理十一项技能。",
     "developerName": "Felix Yang",
     "category": "Productivity",
     "brandColor": "#102C35",

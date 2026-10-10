@@ -6,9 +6,13 @@
 
 | Skill | 用途 | 使用范围 |
 | --- | --- | --- |
+| 学科知识库管理规范 `$notion-academic-database-manager` | 统一三视图、Full Page 打开、卡片预览与核心字段，迁移属性并验收 | 学科数据库 |
 | 学科笔记 `$notion-note-steward` | 按知识树规范整理学科笔记，保留内容、层级和属性 | 学科页面 |
-| 行业笔记 `$notion-industry-steward` | 按行业 Wiki 的现有层级整理行业、细分行业和企业研究 | 行业页面与企业研究 |
+| 学科插图 `$academic-illustration` | 选择实物图、局部标注、辅助示意或完整概念图，放在对应知识点右侧 | 学科正文插图 |
+| 行业笔记 `$notion-industry-steward` | 维护行业分类、层级、行业分析与比较资料 | 行业与细分行业页面 |
+| 公司笔记 `$notion-company-steward` | 优化公司概览、现有属性与母子公司关系 | 公司与集团页面 |
 | 学科封面 `$secondary-discipline-cover` | 为学科页面设计系列封面；工程图解海报可沿用四张参考图 | 学科封面 |
+| 写实风格学科封面 `$photorealistic-discipline-cover` | 以真实照片或场景生成电影感封面，左上角英文大写标题，默认 16:9 | 写实学科封面与照片改编 |
 | 行业封面 `$notion-cover-designer` | 为行业页面搜索、生成和应用风格连贯的封面 | 行业封面 |
 | 公司 Logo `$company-logo` | 优先选用官方现成图，否则参考官方素材生成品牌色背景的 16:9 Logo 横图；也支持方形图标和明确要求的原创设计 | 公司研究页面封面、页面图标或原创品牌设计 |
 | `course-evaluation` | 综合课程目录、教学大纲、软件与教师评价，形成有证据的选课建议 | 课程研究与比较 |
@@ -25,16 +29,22 @@ plugins/felix-workflows/
   .codex-plugin/plugin.json             旧版 Codex 兼容信息
   assets/icon.svg                      插件图标
   skills/
+    notion-academic-database-manager/
     notion-note-steward/
+    academic-illustration/
     notion-industry-steward/
+    notion-company-steward/
     notion-cover-designer/
     secondary-discipline-cover/
+    photorealistic-discipline-cover/
     company-logo/
     course-evaluation/
     schedule-management/
 ```
 
 每个 Skill 的主要规则在自己的 `SKILL.md`；详细规则、模板和参考图在同目录的 `references/`、`assets/`；界面名称、独立图标和主题色在 `agents/openai.yaml`。修改时保留这些相对路径。
+
+学科知识库的可编辑规范原件为 [SKILL.md](plugins/felix-workflows/skills/notion-academic-database-manager/SKILL.md)。保存修改后刷新或重新安装本机插件，并在新会话使用更新；源文件保存不代表当前对话实时热更新，也不会自动修改 Notion。
 
 **命名约定：**`skills/` 下的目录名和 `SKILL.md` 中的 `name` 保持英文短名，便于跨设备安装和用 `$name` 调用；`agents/openai.yaml` 的 `interface.display_name` 使用中文或中英双语。界面上显示「学科笔记、行业笔记、学科封面、行业封面、公司 Logo」，技术标识继续沿用已有名称。
 
@@ -68,3 +78,7 @@ plugins/felix-workflows/
 4. 不把账号凭据、Notion 本地数据库、生成缓存或设备专用配置提交到仓库。
 
 本仓库保存工作流说明和参考资源，不包含 Notion 页面数据，也不自动连接 Notion。实际读写页面仍需相应连接和用户授权。
+
+## 行业与公司规则拆分审核
+
+2026-10-03 拆分稿已保存至源码，尚未刷新安装或发布。审核 [行业规则](plugins/felix-workflows/skills/notion-industry-steward/SKILL.md) 与 [公司规则](plugins/felix-workflows/skills/notion-company-steward/SKILL.md)。本轮标准为简短概览与现有属性补全，独立子公司页逐一审核后再考虑合并。规则审核后用于全量公司页任务。
