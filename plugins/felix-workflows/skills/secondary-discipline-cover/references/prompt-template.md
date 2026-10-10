@@ -1,5 +1,7 @@
 # 参数化提示词模板
 
+A–C 仅适用于选定的工程图解海报系列。已有认可系列时使用 D；用户要求非电影感、右侧标题或更少元素时，不拼接 A–C 中冲突的默认语句。
+
 填入 `TITLE`、`HERO`、`DIAGRAMS`、`ACCENT`、`MICROCOPY` 和 `USE`。默认遵循 Felix 已确认的效果：平面标题、无标题装饰横线、适度写实背景与学科图解。场景与材质按主题选择，不统一套用玻璃桌面。默认使用无字底图＋精确文字叠加；一次生成带字海报时使用 B 并校对文字。
 
 ## A. 无字底图，供精确排字
@@ -33,3 +35,13 @@ This will also be cropped into a shallow Notion cover and gallery card. Keep the
 - 参考 [Harmonic Analysis](../assets/harmonic-analysis-approved.png) 的平面白／浅蓝标题、无横线排版、可信玻璃材质和自然光影；其他学科替换主体与辅助图解。
 - 用户认可画面后，只要求去除标题横线或调整字体时，使用成品做局部编辑，锁定背景、主体、图解与构图，不重新设计整张封面。
 - 删除标题装饰横线时保留图解坐标轴、面板边框与必要箭头。
+
+```text
+Use the provided approved image as the editing reference for [TOPIC].
+Requested change only: [DELTA].
+Preserve: [approved title text and placement unless targeted, composition, subject identity, element count, background, natural material colors, lighting, aspect ratio].
+Series settings: [approved style and crop-safe layout].
+Apply the requested change without introducing a new composition, cinematic treatment, decorative labels, or unrelated elements.
+```
+
+`DELTA` 写具体变更，如“仅把绿色强调色换成紫色，保留主体自然颜色”。先看参考图再编辑，完成后与参考对照；上述保留要求不是已经验证的结果。若同系列新图而非修改旧图，沿用固定项，仅替换已确定的单张变量。

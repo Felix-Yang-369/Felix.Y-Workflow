@@ -1,15 +1,15 @@
 {
   "name": "felix-workflows",
-  "version": "0.4.12",
-  "description": "Felix \u7684\u4e2a\u4eba\u77e5\u8bc6\u3001\u8bfe\u7a0b\u4e0e\u65e5\u7a0b\u5de5\u4f5c\u6d41",
+  "version": "0.4.13",
+  "description": "Felix 的个人知识、课程与日程工作流",
   "author": {
     "name": "Felix Yang"
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "Felix \u5de5\u4f5c\u6d41",
-    "shortDescription": "维护学科与行业笔记、插图、封面、公司标识、课程和日程",
-    "longDescription": "提供学科知识库管理规范、学科笔记、学科插图、行业笔记、公司笔记、学科封面、写实风格学科封面、行业封面、公司 Logo、大学课程评估和 iCloud 学期日程管理十一项技能。",
+    "displayName": "Felix 工作流",
+    "shortDescription": "学科与行业笔记、插图封面、知识讲解、课程和日程",
+    "longDescription": "提供学科知识库管理规范、学科笔记、学科插图、行业笔记、公司笔记、学科封面、写实风格学科封面、行业封面、公司 Logo、大学课程评估、iCloud 学期日程管理，以及抽象知识讲解与具象知识讲解十三项技能。",
     "developerName": "Felix Yang",
     "category": "Productivity",
     "brandColor": "#102C35",
@@ -18,8 +18,8 @@
     "capabilities": [],
     "defaultPrompt": [
       "使用 $notion-note-steward 整理这篇学科笔记。",
-      "\u4f7f\u7528 $course-evaluation \u7efc\u5408\u8bfe\u7a0b\u76ee\u5f55\u3001\u6559\u5b66\u5927\u7eb2\u3001\u8f6f\u4ef6\u4e0e\u6559\u5e08\u8bc4\u4ef7\u6765\u8bc4\u4f30\u8bfe\u7a0b\u3002",
-      "\u4f7f\u7528 $schedule-management \u5728\u5f53\u524d\u8bbe\u5907\u4e0a\u6838\u5bf9\u5e76\u6574\u7406 iCloud \u5b66\u672f\u65e5\u5386\u3002"
+      "使用 $course-evaluation 综合课程目录、教学大纲、软件与教师评价来评估课程。",
+      "使用 $schedule-management 在当前设备上核对并整理 iCloud 学术日历。"
     ]
   }
 }

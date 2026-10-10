@@ -17,6 +17,8 @@
 | 公司 Logo `$company-logo` | 优先选用官方现成图，否则参考官方素材生成品牌色背景的 16:9 Logo 横图；也支持方形图标和明确要求的原创设计 | 公司研究页面封面、页面图标或原创品牌设计 |
 | `course-evaluation` | 综合课程目录、教学大纲、软件与教师评价，形成有证据的选课建议 | 课程研究与比较 |
 | `schedule-management` | 按权威来源，通过 macOS Apple Calendar 或 Windows Notion Calendar 维护同一组 iCloud 课程、考试、周次与节假日 | 跨设备学期日程管理 |
+| 抽象知识讲解 `$abstract-knowledge-explainer` | 从具体问题和旧知识出发，逐步建立抽象概念、正式定义与直觉 | 抽象代数、信息论、计算理论、拓扑、理论机器学习 |
+| 具象知识讲解 `$concrete-knowledge-explainer` | 用结构与动态流程图解系统，再解释原理、模型和失效情况 | 机械工程、电路、硬件、机器人、制造 |
 
 Notion 相关的五项在技能列表里使用中文名称，不以「Notion」开头。英文目录名和 `$name` 是稳定的调用标识，暂不改动现有标识，以免旧提示词失效。学科封面仅在用户要求出图时生成图片，仅在用户要求应用到页面时更改页面；行业封面保留已有封面，除非用户要求更换。公司 Logo 默认指现有公司的官方标识制作的横向展示图，不代表重新设计其品牌。
 
@@ -40,6 +42,8 @@ plugins/felix-workflows/
     company-logo/
     course-evaluation/
     schedule-management/
+    abstract-knowledge-explainer/
+    concrete-knowledge-explainer/
 ```
 
 每个 Skill 的主要规则在自己的 `SKILL.md`；详细规则、模板和参考图在同目录的 `references/`、`assets/`；界面名称、独立图标和主题色在 `agents/openai.yaml`。修改时保留这些相对路径。
@@ -50,9 +54,11 @@ plugins/felix-workflows/
 
 插件图标在 `assets/icon.svg`，两个插件清单都引用同一文件。它是原创的开卷与连接点图形；修改图标后更新清单中的路径并在小尺寸下检查辨识度。
 
-每项 Skill 也有独立的 `assets/icon.svg`。`agents/openai.yaml` 的 `icon_small`、`icon_large` 指向该文件，`brand_color` 设置界面强调色。七个图标使用不同的鲜明底色和适合小尺寸识别的粗线条图形：书本、工厂、学科画框、行业画框、品牌徽记、勾选卡片和日历。
+多数 Skill 配有独立的 `assets/icon.svg`。`agents/openai.yaml` 的 `icon_small`、`icon_large` 指向该文件，`brand_color` 设置界面强调色。图标使用不同的底色和适合小尺寸识别的粗线条图形；未配置图标的技能仍可正常使用。
 
-![七项 Skill 的图标预览](plugins/felix-workflows/assets/skill-icons-preview.png)
+原有七项 Skill 的图标预览：![原有七项 Skill 的图标预览](plugins/felix-workflows/assets/skill-icons-preview.png)。新增的两个图标分别用汇聚的节点和相连的部件表达抽象与具象讲解。
+
+抽象知识讲解适合“概念本身难以看见”的问题，依次解释现实问题、动机、旧方法的困难、与已知概念的关系、抽象过程、正式定义，再检查直觉。具象知识讲解适合“系统如何构造和运作”的问题，依次展示结构、部件、运动或信息/能量/受力流程、原理、数学模型及应用与失效。两者可按主题混用，不必机械套用全部步骤。
 
 `schedule-management` 以 iCloud 日历为共享数据层：macOS 默认操作 Apple Calendar，Windows 操作已连接 iCloud 的 Notion Calendar。Notion 数据库日历不是这些课程日历的替代品；跨客户端写入后需要等待同步并检查重复事件。
 
@@ -79,6 +85,35 @@ plugins/felix-workflows/
 
 本仓库保存工作流说明和参考资源，不包含 Notion 页面数据，也不自动连接 Notion。实际读写页面仍需相应连接和用户授权。
 
-## 行业与公司规则拆分审核
+## 0.4.6：执行范围与连续工作
 
-2026-10-03 拆分稿已保存至源码，尚未刷新安装或发布。审核 [行业规则](plugins/felix-workflows/skills/notion-industry-steward/SKILL.md) 与 [公司规则](plugins/felix-workflows/skills/notion-company-steward/SKILL.md)。本轮标准为简短概览与现有属性补全，独立子公司页逐一审核后再考虑合并。规则审核后用于全量公司页任务。
+- 学科笔记区分方案分析、内容完善、排版整理和结构重整；学科 INTRODUCTION 不编号，保留已有工作区身份验证与左右栏规则。
+- 两项讲解技能区分首次讲解与局部追问，在当前对话中保留主线和待探索问题，按问题切换抽象与具象方法。
+- 学科封面以已认可系列为先，局部修改保持其他已认可内容，并同步检查提示词模板与裁切。
+- 更新后使用 [行为验收案例](docs/skill-acceptance.md) 检查；静态文件检查不等于模型在真实会话中的行为测试。
+
+升级时先比较同名独立 Skill 的全部文件，保留独有内容或说明已被较新规则替代；备份后仅停用已由插件覆盖的独立副本。发布后刷新市场、重新安装并核对实际缓存文件与源文件一致。旧会话可能仍持有旧技能说明，需在新会话验证。
+
+## 0.4.13：最新工作流同步
+
+- 合并本地最新的学科数据库管理、学科插图、公司笔记和写实学科封面技能，与仓库已有的抽象、具象知识讲解技能；共十三项技能。
+- 保留远端的执行范围、连续讲解与局部封面修改规则，更新学科父页顺序、学习进度维护边界及学科封面参考资源。
+- 行业与公司规则已拆分发布；发布技能规则本身不执行 Notion 页面或数据库操作。
+
+## 分享给好友
+
+这是私人仓库，好友需先接受 GitHub 仓库访问邀请，并在自己的电脑上配置 GitHub 访问权限。安装了 Codex 命令行工具后，可直接运行：
+
+```sh
+codex plugin marketplace add Felix-Yang-369/felix-workflows
+codex plugin add felix-workflows@felix-workflows
+```
+
+重启 Codex 后开启新对话，在 Plugins 中确认「Felix 工作流」。好友需要自行连接 Notion、日历等服务；这些工作流包含 Felix 的个人页面结构与格式约定，在其他工作区使用时应明确目标与适用规则，不自动套用 Felix 的页面 ID 或日历配置。
+
+已安装用户可运行以下命令获取更新，再重启并开启新对话：
+
+```sh
+codex plugin marketplace upgrade felix-workflows
+codex plugin add felix-workflows@felix-workflows
+```
