@@ -4,4 +4,4 @@ interface:
   icon_small: "./assets/icon.svg"
   icon_large: "./assets/icon.svg"
   brand_color: "#EC6024"
-  default_prompt: "使用 $notion-industry-steward 完整优化这篇行业笔记，检查全部章节，补齐定义、价值链、商业机制与指标边界，在授权范围内持续完成并验证，保留数据库与页面关系。"
+  default_prompt: "使用 $notion-industry-steward 完整优化这篇行业笔记，检查全部章节，补齐定义、价值链、商业机制与指标边界，在授权范围内持续完成并验证，保留数据库与页面关系；本次授权范围内全部页面逐项验收，有缺口继续处理，最后列出实际未完成项，无剩余则写无。"

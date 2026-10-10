@@ -4,4 +4,4 @@ interface:
   icon_small: "./assets/icon.svg"
   icon_large: "./assets/icon.svg"
   brand_color: "#2563EB"
-  default_prompt: "使用 $notion-company-steward 优化指定公司集合，逐页补齐简短概览和已授权的现有属性，持续完成全部目标并核验，保留内容与资源，列出需审核的合并项。"
+  default_prompt: "使用 $notion-company-steward 优化指定公司集合，逐页补齐简短概览和已授权的现有属性，持续完成全部目标并核验，保留内容与资源，列出需审核的合并项；本次授权范围内全部页面逐项验收，有缺口继续处理，最后列出实际未完成项，无剩余则写无。"
