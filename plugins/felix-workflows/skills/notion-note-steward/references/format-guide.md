@@ -60,7 +60,7 @@ ii. **Example 示例:**<br>示例内容
 1. **Definition 定义:**<br>
    Monomorphism 单态射, 又称 Injective Homomorphism 单射同态, 即同时满足同态性与单射性的映射
 2. **Formal Definition 形式化定义:**<br>
-   设 \(G,H\) 为群, \(\phi:G\to H\) 为群同态, 即 \(\phi(ab)=\phi(a)\phi(b)\) 对所有 \(a,b\in G\) 成立<br>
+   对群同态 \(\phi:G\to H\),<br>
    \[\boxed{\forall a,b\in G,\quad \phi(a)=\phi(b)\Rightarrow a=b}\]
 3. **Kernel Criterion 核判定:**<br>
    对群同态 \(\phi:G\to H\), 有<br>
@@ -72,10 +72,41 @@ ii. **Example 示例:**<br>示例内容
 **Intuition 直觉:**<br>
 不同元素不会被映射到同一个元素, 因而不会合并原群中的元素
 
+<callout color="gray_bg">
 **Examples 例子:**<br>
 \(\phi:(\mathbb Z,+)\to(\mathbb Z,+),\ \phi(n)=2n\) 是单态射, 因为 \(2(m+n)=2m+2n\), 且 \(2m=2n\Rightarrow m=n\)；它不是满射, 因为奇数不在像中
+</callout>
 
 这是群论语境中的用法, 不将“单态射就是单射同态”未经核实地推广至任意范畴。示例只展示所需角度, 不要求追加空的 Motivation、Properties 或 Theorems 条目。
+
+### 精简公式、多条性质与左右例子
+
+下方为一般线性群的版式模板, 使用 H3 概念标题与 H4 性质标题；原生有序列表样式按当前工具能力设置。左侧例子只列名称, 右侧完整例子包在浅灰色 callout 中。`GL_n(F)` 的集合公式定义一般线性群；更一般的矩阵群是其子群, 可用 `G\leq GL_n(F)` 简记, 不将两者混作同一个概念。
+
+```text
+<columns>
+	<column ratio="60">
+		### a. General Linear Group 一般线性群:
+		1. **Definition 定义:**<br>General Linear Group 一般线性群, 域 F 上所有 n 阶可逆矩阵在矩阵乘法下组成的群
+		2. **Formal Definition 形式化定义:**<br>
+			$\boxed{GL_n(F)=\{A\in M_n(F):\det A\neq 0\}}$
+			其中 $M_n(F)$ 表示所有 $n\times n$ 的 $F$ 上矩阵
+		3. **Examples 例子:**<br>$GL_2(\mathbb R)$, $GL_3(\mathbb C)$
+		#### I. Properties 性质:
+		1. **Identity 单位元:**<br>单位元为 $I_n$
+		2. **Inverse 逆元:**<br>$A$ 的群逆元为逆矩阵 $A^{-1}$
+		3. **Product Inverse 乘积的逆:**<br>$(AB)^{-1}=B^{-1}A^{-1}$
+	</column>
+	<column ratio="40">
+		<callout color="gray_bg">
+			**Example 例子:**<br>
+			取 $A=\begin{pmatrix}1&1\\0&1\end{pmatrix}$
+			因为 $\det A=1\neq 0$, 所以 $A\in GL_2(\mathbb R)$
+			其逆矩阵为 $A^{-1}=\begin{pmatrix}1&-1\\0&1\end{pmatrix}$, 直接相乘可得 $AA^{-1}=A^{-1}A=I_2$
+		</callout>
+	</column>
+</columns>
+```
 
 ## 知识树页面
 

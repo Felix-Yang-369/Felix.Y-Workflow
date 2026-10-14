@@ -4,6 +4,8 @@
 
 ## 当前内容
 
+0.4.19 按数学笔记样例反馈进一步精简形式化定义：默认一个核心公式与必要符号说明, 多条性质可独立 H4 并逐项有序列出, 左侧例子简写、右侧完整例子使用浅灰色 callout；保留概念区分与必要前提。
+
 0.4.18 在学科笔记 Skill 中新增[数学概念的解释规范](plugins/felix-workflows/skills/notion-note-steward/SKILL.md#数学概念的解释规范)：Definition 使用固定双语句式, 适用的 Formal Definition 写明前提并框选公式, 其余讲解角度按需选择；附单态射示例与行为验收案例。规则更新不自动修改历史 Notion 页面。
 
 | Skill | 用途 | 使用范围 |
