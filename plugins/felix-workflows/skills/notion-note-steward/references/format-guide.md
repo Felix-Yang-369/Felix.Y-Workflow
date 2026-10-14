@@ -51,6 +51,32 @@ ii. **Example 示例:**<br>示例内容
 
 写入 Notion 时核实四级标题的实际支持情况；无法原样呈现时说明限制，不把降级格式报告为原生 H4。下方旧结构示例中的阿拉伯数字列表仅作为功能缺失时的回退示例。
 
+## 数学概念示例
+
+具体规则以主文件[数学概念的解释规范](../SKILL.md#数学概念的解释规范)为准。以下示例使用 H4 与阿拉伯数字 Markdown 列表；实际写入沿用当前层级, 原生罗马数字有序列表可用时优先使用。定义与判定在左侧, 短直觉与例子优先放对应右侧说明区, 不把双栏布局的制作说明写进笔记正文。
+
+#### I. Monomorphism 单态射:
+
+1. **Definition 定义:**<br>
+   Monomorphism 单态射, 又称 Injective Homomorphism 单射同态, 即同时满足同态性与单射性的映射
+2. **Formal Definition 形式化定义:**<br>
+   设 \(G,H\) 为群, \(\phi:G\to H\) 为群同态, 即 \(\phi(ab)=\phi(a)\phi(b)\) 对所有 \(a,b\in G\) 成立<br>
+   \[\boxed{\forall a,b\in G,\quad \phi(a)=\phi(b)\Rightarrow a=b}\]
+3. **Kernel Criterion 核判定:**<br>
+   对群同态 \(\phi:G\to H\), 有<br>
+   \[\boxed{\phi\text{ is injective}\iff\ker\phi=\{e_G\}}\]<br>
+   其中 \(\ker\phi=\{g\in G:\phi(g)=e_H\}\), \(e_G,e_H\) 分别为两个群的单位元；只有单位元映到 \(e_H\) 时, 不会合并不同元素
+
+右侧辅助内容示例：
+
+**Intuition 直觉:**<br>
+不同元素不会被映射到同一个元素, 因而不会合并原群中的元素
+
+**Examples 例子:**<br>
+\(\phi:(\mathbb Z,+)\to(\mathbb Z,+),\ \phi(n)=2n\) 是单态射, 因为 \(2(m+n)=2m+2n\), 且 \(2m=2n\Rightarrow m=n\)；它不是满射, 因为奇数不在像中
+
+这是群论语境中的用法, 不将“单态射就是单射同态”未经核实地推广至任意范畴。示例只展示所需角度, 不要求追加空的 Motivation、Properties 或 Theorems 条目。
+
 ## 知识树页面
 
 适用于学科、软件概念、工具和编程语言。
