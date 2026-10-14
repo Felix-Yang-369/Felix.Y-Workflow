@@ -81,18 +81,19 @@ ii. **Example 示例:**<br>示例内容
 
 ### 精简公式、多条性质与左右例子
 
-下方为一般线性群的版式模板, 使用 H3 概念标题与 H4 性质标题；原生有序列表样式按当前工具能力设置。左侧例子只列名称, 右侧完整例子包在浅灰色 callout 中。`GL_n(F)` 的集合公式定义一般线性群；更一般的矩阵群是其子群, 可用 `G\leq GL_n(F)` 简记, 不将两者混作同一个概念。
+下方为一般线性群的版式模板, 使用 H3 概念标题, 下设统一的 H4 `I. Definition 定义` 与 `II. Properties 性质`；原生有序列表样式按当前工具能力设置。左侧例子使用符号加一个空格及名称, 右侧完整例子包在浅灰色 callout 中。`GL_n(F)` 的集合公式定义一般线性群；更一般的矩阵群是其子群, 可用 `G\leq GL_n(F)` 简记, 不将两者混作同一个概念。
 
 ```text
 <columns>
 	<column ratio="60">
 		### a. General Linear Group 一般线性群:
+		#### I. Definition 定义:
 		1. **Definition 定义:**<br>General Linear Group 一般线性群, 域 F 上所有 n 阶可逆矩阵在矩阵乘法下组成的群
 		2. **Formal Definition 形式化定义:**<br>
 			$\boxed{GL_n(F)=\{A\in M_n(F):\det A\neq 0\}}$
 			其中 $M_n(F)$ 表示所有 $n\times n$ 的 $F$ 上矩阵
-		3. **Examples 例子:**<br>$GL_2(\mathbb R)$, $GL_3(\mathbb C)$
-		#### I. Properties 性质:
+		3. **Examples 例子:**<br>$GL_2(\mathbb R)$ 二阶实一般线性群, $GL_3(\mathbb C)$ 三阶复一般线性群
+		#### II. Properties 性质:
 		1. **Identity 单位元:**<br>单位元为 $I_n$
 		2. **Inverse 逆元:**<br>$A$ 的群逆元为逆矩阵 $A^{-1}$
 		3. **Product Inverse 乘积的逆:**<br>$(AB)^{-1}=B^{-1}A^{-1}$
