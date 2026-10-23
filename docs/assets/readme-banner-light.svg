@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="272" viewBox="0 0 1280 272" role="img" aria-labelledby="title desc">
+  <title id="title">FELIX WORKFLOW</title>
+  <desc id="desc">Felix's personal workflow library, built from editable Markdown. FY brand mark on a light green background.</desc>
+  <rect x="1" y="1" width="1278" height="270" rx="22" fill="#F2F6F3" stroke="#D6E3DA" stroke-width="2"/>
+  <g transform="translate(50 53) scale(2.6)">
+  <rect width="64" height="64" rx="14" fill="#55786D"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#86A49A" stroke-width="3"/>
+  <path fill="#F4F7F5" d="M12 13h21v8H21v7h10v8H21v15h-9V13Zm20 0h10l5 10 5-10h10L52 33v18h-9V33L32 13Z"/>
+  <rect x="30" y="29" width="8" height="8" rx="1.5" fill="#C7D9D2"/>
+</g>
+  <g fill="none" stroke="#D6E3DA" stroke-width="2">
+    <path d="M1110 70 1167 103 1167 169 1110 202 1053 169 1053 103Z"/>
+    <path d="m1110 70 0 132m-57-99 114 66m-114 0 114-66"/>
+  </g>
+  <g fill="#55786D">
+    <circle cx="1110" cy="70" r="6"/><circle cx="1167" cy="103" r="6"/><circle cx="1167" cy="169" r="6"/>
+    <circle cx="1110" cy="202" r="6"/><circle cx="1053" cy="169" r="6"/><circle cx="1053" cy="103" r="6"/>
+  </g>
+  <circle cx="1110" cy="136" r="17" fill="#55786D"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="266" y="87" font-size="16" font-weight="600" letter-spacing="3" fill="#55786D">FELIX.Y / PERSONAL WORKFLOWS</text>
+    <text x="263" y="149" font-size="53" font-weight="700" letter-spacing="1.5" fill="#233C30">FELIX WORKFLOW</text>
+    <text x="266" y="192" font-size="16" letter-spacing="2" fill="#55786D">EDITABLE MARKDOWN · REUSABLE SKILLS</text>
+  </g>
+</svg>
