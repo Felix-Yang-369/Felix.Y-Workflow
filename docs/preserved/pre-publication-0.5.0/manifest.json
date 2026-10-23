@@ -1,0 +1,11 @@
+{
+  "description": "Exact documentation before the 0.5.0 publication edit; original relative links are preserved as historical source.",
+  "files": {
+    "README.md": "b9e0e19b97c7fcf7a1a5944650694f924739a95cec799a2ca3a0c5a94113e677",
+    "README.zh-CN.md": "3d843ac895b67c53772e43e359b34f430007aa79c2df7f3583d927c110d529e0",
+    "CHANGELOG.md": "2549c411bf0ff3fbf1ed9d51a9b36f32f7c51a0a2ae593668489efa8ceb053f8",
+    "docs/installation.md": "d497f29d544f9e374f3cdd11d00b0821311a560f0705508d24d90783d8d533fa",
+    "docs/customization.md": "63993db3a7c29698b5c5eb43a8feabf96990d039fae8a098a63042d8aa5cb414",
+    "docs/workflows.md": "783e1740aa626e782aec1eff2e09f3c677114a90aec082dbe27f62b468da61e4"
+  }
+}

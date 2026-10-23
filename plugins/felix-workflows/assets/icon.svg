@@ -1,8 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
-  <title id="title">Felix 工作流：知识与行动相连</title>
-  <rect width="512" height="512" rx="112" fill="#102C35"/>
-  <path d="M105 321c48-17 99-16 151 8 52-24 103-25 151-8V179c-49-17-100-16-151 8-51-24-102-25-151-8v142Z" fill="none" stroke="#E9F1E9" stroke-width="22" stroke-linejoin="round"/>
-  <path d="M256 187v142M138 222c32-5 60-1 84 9M138 262c32-5 60-1 84 9M290 231c25-10 52-14 84-9M290 271c25-10 52-14 84-9" fill="none" stroke="#77BFC0" stroke-width="14" stroke-linecap="round"/>
-  <path d="M172 370h168" fill="none" stroke="#D9B679" stroke-width="17" stroke-linecap="round"/>
-  <circle cx="256" cy="370" r="23" fill="#D9B679"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">Felix Yang</title>
+  <rect width="64" height="64" rx="14" fill="#55786D"/>
+  <rect x="1.5" y="1.5" width="61" height="61" rx="12.5" fill="none" stroke="#86A49A" stroke-width="3"/>
+  <path fill="#F4F7F5" d="M12 13h21v8H21v7h10v8H21v15h-9V13Zm20 0h10l5 10 5-10h10L52 33v18h-9V33L32 13Z"/>
+  <rect x="30" y="29" width="8" height="8" rx="1.5" fill="#C7D9D2"/>
 </svg>

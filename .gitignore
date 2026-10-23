@@ -14,3 +14,7 @@ notion.db
 *.sqlite
 *.sqlite3
 .codex/plugins/cache/
+
+# Preserved local backups and unpublished working drafts
+/backups/
+/drafts/

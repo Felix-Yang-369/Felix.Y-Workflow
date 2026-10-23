@@ -1,0 +1,8 @@
+interface:
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#E44949"
+  display_name: "日程管理"
+  short_description: "跨 macOS 与 Windows 维护 iCloud 课程、考试、周次与节假日"
+  default_prompt: "使用 $schedule-management 在当前设备上核对并整理我的 iCloud 学术日历。"
+

@@ -1,7 +1,0 @@
-interface:
-  display_name: "具象知识讲解"
-  short_description: "用结构与动态流程图解系统，再理解原理和计算"
-  icon_small: "./assets/icon.svg"
-  icon_large: "./assets/icon.svg"
-  brand_color: "#147D8B"
-  default_prompt: "使用 $concrete-knowledge-explainer 通过结构图和过程图讲解这个具象系统，先看见，再理解，再计算。"

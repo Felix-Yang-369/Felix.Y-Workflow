@@ -6,6 +6,16 @@ Version notes preserved from the previous README. The 0.4.21 entry describes loc
 
 以下版本说明从旧首页完整迁入；0.4.21 为本地源码说明，此记录不代表已发布 GitHub Release。
 
+## 0.5.0 · Six editable domain entries · 2026-10-23
+
+- Expose Knowledge, Finance, Planning, Learning, Research, and Creative as six callable Skills.
+- Preserve all 13 original workflows, supporting Markdown, UI metadata, icons, and examples as complete independently editable modules; retain the latest user-saved academic database rules and their existing unresolved conflicts.
+- Add cash-flow reconciliation and portfolio review methods, shared execution rules, an old-name map, and a file-by-file preservation manifest.
+- Keep the stable plugin ID and FY branding. Update both READMEs, the module catalog, customization, and installation instructions for GitHub and editable local sources.
+- Preserve the previous documentation in full under [pre-publication source](docs/preserved/README.md). Static checks cover six entries, 65 original files, links, and source/cache equality; real account operations and business-page visual checks are not part of this release verification.
+
+六类入口、13 个原工作流全文与全部配套文件完整保留；金融新增两份方法规范。最新手动修改原样保留，本轮不删除或统一其规则。GitHub 源码同步、本机安装和真实业务行为分开核对；此更新记录不表示创建了单独的 GitHub Release。
+
 ## 0.4.21
 
 本地版统一显示名为 `FELIX WORKFLOW`，插件图标采用个人网站提供的 FY 标识，主题色为 `#55786D`；保留现有十三项技能及已保存的公式、原生罗马数字列表和 Logo 视觉尺度修订。金融管理等扩展仍处于方案阶段。
@@ -20,7 +30,7 @@ Version notes preserved from the previous README. The 0.4.21 entry describes loc
 
 ## 0.4.18
 
-在学科笔记 Skill 中新增[数学概念的解释规范](plugins/felix-workflows/skills/notion-note-steward/SKILL.md#数学概念的解释规范)：Definition 使用固定双语句式, 适用的 Formal Definition 写明前提并框选公式, 其余讲解角度按需选择；附单态射示例与行为验收案例。规则更新不自动修改历史 Notion 页面。
+在学科笔记 Skill 中新增[数学概念的解释规范](plugins/felix-workflows/skills/knowledge-management/references/notion-note-steward/workflow.md#数学概念的解释规范)：Definition 使用固定双语句式, 适用的 Formal Definition 写明前提并框选公式, 其余讲解角度按需选择；附单态射示例与行为验收案例。规则更新不自动修改历史 Notion 页面。
 
 ## 0.4.17 — 一流教材与讲义参考
 
@@ -40,7 +50,7 @@ Version notes preserved from the previous README. The 0.4.21 entry describes loc
 
 ## 0.4.14 — 完整覆盖、内容深度与完成验收
 
-- 学科、行业和公司笔记统一读取[完整覆盖与完成标准](plugins/felix-workflows/skills/notion-note-steward/references/completion-workflow.md)，完整检查指定范围，按质量补齐，分批执行到完成。
+- 学科、行业和公司笔记统一读取[完整覆盖与完成标准](plugins/felix-workflows/skills/knowledge-management/references/notion-note-steward/references/completion-workflow.md)，完整检查指定范围，按质量补齐，分批执行到完成。
 - 承接已接受方案，交付前检查遗漏与前后一致性，分别报告内容回读和视觉验收；保留只读建议、局部任务及公司简短概览边界。
 - 合并本机已有的右侧学科联系、60:40 双栏、H1 全宽与流程图 Display 规则，保留 0.4.13 的父页模板、学习进度和十三项技能。
 - 增加整篇、整库、局部、写入失败和视觉受限等验收场景。静态检查不保证每次模型输出都达标，后续真实使用仍需按覆盖清单验收。

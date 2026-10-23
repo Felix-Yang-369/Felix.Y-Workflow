@@ -1,0 +1,13 @@
+# Keep current documentation readable with stable line endings.
+*.md text eol=lf
+*.json text eol=lf
+*.yaml text eol=lf
+*.svg text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
+# Payload and preservation hashes must survive checkout on any platform.
+# Preserve intentional final blank lines in these original files, too.
+plugins/felix-workflows/** -text whitespace=trailing-space,space-before-tab,cr-at-eol,-blank-at-eof
+docs/preserved/** -text whitespace=trailing-space,space-before-tab,cr-at-eol,-blank-at-eof
+docs/archive/** -text whitespace=trailing-space,space-before-tab,cr-at-eol,-blank-at-eof

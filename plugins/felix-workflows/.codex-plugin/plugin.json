@@ -1,25 +1,25 @@
 {
   "name": "felix-workflows",
-  "version": "0.4.20",
-  "description": "Felix 的个人知识、课程与日程工作流",
+  "version": "0.5.0",
+  "description": "Felix 的知识、金融、日程、学习、研究与创作工作流",
   "author": {
     "name": "Felix Yang"
   },
   "skills": "./skills/",
   "interface": {
-    "displayName": "Felix 工作流",
-    "shortDescription": "学科与行业笔记、插图封面、知识讲解、课程和日程",
-    "longDescription": "提供学科知识库管理规范、学科笔记、学科插图、行业笔记、公司笔记、学科封面、写实风格学科封面、行业封面、公司 Logo、大学课程评估、iCloud 学期日程管理，以及抽象知识讲解与具象知识讲解十三项技能。",
+    "displayName": "FELIX WORKFLOW",
+    "shortDescription": "知识、金融、日程、学习、研究与创作的六类个人工作流",
+    "longDescription": "六类可独立编辑的工作流入口，完整保留原十三项学科、行业公司、课程讲解和视觉素材规范及全部参考资源，并提供收支对账与投资复盘方法。",
     "developerName": "Felix Yang",
     "category": "Productivity",
-    "brandColor": "#102C35",
+    "brandColor": "#55786D",
     "logo": "./assets/icon.svg",
     "composerIcon": "./assets/icon.svg",
     "capabilities": [],
     "defaultPrompt": [
-      "使用 $notion-note-steward 整理这篇学科笔记。",
-      "使用 $course-evaluation 综合课程目录、教学大纲、软件与教师评价来评估课程。",
-      "使用 $schedule-management 在当前设备上核对并整理 iCloud 学术日历。"
+      "使用 $knowledge-management 整理这篇笔记或数据库，完整读取对应模块并保留原有内容。",
+      "使用 $finance-management 按真实数据核对流水、交易档案或投资复盘，说明来源与核对状态。",
+      "使用 $schedule-management 核对并维护我指定范围内的日程，沿用当前日历规则。"
     ]
   }
 }

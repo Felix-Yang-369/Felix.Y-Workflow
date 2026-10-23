@@ -6,30 +6,31 @@
   </picture>
 
   <p>Your personal workflow library, built from editable Markdown.</p>
+  <p><strong>0.5.0 · Six Skill entries · Fully editable workflow modules</strong></p>
   <p><strong>English</strong> · <a href="./README.zh-CN.md">简体中文</a></p>
   <p><a href="#quick-start">Quick Start</a> · <a href="#six-domains">Six Domains</a> · <a href="#customize-your-workflow">Customize</a> · <a href="#documentation">Documentation</a></p>
 </div>
 
 ## Overview
 
-FELIX WORKFLOW packages Felix's repeatable workflows into one Codex plugin. It brings together knowledge organization, learning, research, calendar management, and visual creation, with the instructions kept in files you can read and edit.
+FELIX WORKFLOW packages Felix's repeatable workflows into one Codex plugin. It brings together knowledge organization, finance, calendar management, learning, research, and visual creation, with the instructions kept in files you can read and edit.
 
-- **Make the rules yours.** Edit a workflow's `SKILL.md` and its supporting Markdown files.
+- **Make the rules yours.** Edit a domain’s `SKILL.md` and each full workflow or method file independently.
 - **Use focused workflows.** Choose the Skill for your task, then load the relevant references.
 - **Keep a consistent method.** Carry confirmed requirements through execution and check the actual result.
 
 ## Six Domains
 
-Six domains provide a navigation map for the library. The current package contains **13 Skills** across five domains; Finance is planned.
+**0.5.0 exposes six callable Skill entries.** All 13 original workflows, their rules, supporting files, icons, and examples remain complete reference modules. Finance adds two method files for cash flow and portfolio reviews; it does not include personal financial records.
 
-| Domain | What it covers | Current workflows |
-|:--|:--|:--|
-| 📚 **Knowledge** | Notes, databases, structure, and supporting illustrations | [3 Skills](docs/workflows.md#knowledge) |
-| 💰 **Finance** | Cash flow, reconciliation, and investment reviews | [Planned](docs/workflows.md#finance) |
-| 📅 **Planning** | Source-backed academic calendars and schedule checks | [1 Skill](docs/workflows.md#planning) |
-| 🎓 **Learning** | Concepts, systems, and course-fit decisions | [3 Skills](docs/workflows.md#learning) |
-| 🔎 **Research** | Industry structure and company information | [2 Skills](docs/workflows.md#research) |
-| 🎨 **Creative** | Discipline covers, industry covers, and company logos | [4 Skills](docs/workflows.md#creative) |
+| Domain entry | Invoke | What it covers | Editable modules |
+|:--|:--|:--|:--|
+| 📚 [**Knowledge**](plugins/felix-workflows/skills/knowledge-management/SKILL.md) | `$knowledge-management` | Notes, databases, structure, and supporting illustrations | [3 preserved modules](docs/workflows.md#knowledge) |
+| 💰 [**Finance**](plugins/felix-workflows/skills/finance-management/SKILL.md) | `$finance-management` | Cash flow, reconciliation, and investment reviews | [2 new method files](docs/workflows.md#finance) |
+| 📅 [**Planning**](plugins/felix-workflows/skills/schedule-management/SKILL.md) | `$schedule-management` | Source-backed academic calendars and schedule checks | [1 preserved module](docs/workflows.md#planning) |
+| 🎓 [**Learning**](plugins/felix-workflows/skills/learning-management/SKILL.md) | `$learning-management` | Concepts, systems, and course-fit decisions | [3 preserved modules](docs/workflows.md#learning) |
+| 🔎 [**Research**](plugins/felix-workflows/skills/research-management/SKILL.md) | `$research-management` | Industry structure and company information | [2 preserved modules](docs/workflows.md#research) |
+| 🎨 [**Creative**](plugins/felix-workflows/skills/creative-management/SKILL.md) | `$creative-management` | Discipline covers, industry covers, and company logos | [4 preserved modules](docs/workflows.md#creative) |
 
 ## Quick Start
 
@@ -43,7 +44,7 @@ codex plugin add felix-workflows@felix-workflows
 Start a new conversation and invoke a workflow, for example:
 
 ```text
-Use $notion-note-steward to review this academic note and propose improvements.
+Use $knowledge-management to review this academic note and propose improvements.
 ```
 
 The repository name is `Felix.Y-Workflow`; the stable plugin and marketplace identifiers remain `felix-workflows`.
@@ -53,20 +54,27 @@ See the [installation guide](docs/installation.md) for local-source installs, up
 ## How It Works
 
 ```text
-FELIX WORKFLOW · one plugin
-├── Skills               task entry points and procedures
-├── references/          detailed rules and examples within each Skill
-├── assets/              icons and supporting visual resources
-└── agents/openai.yaml   each Skill's display settings
+plugins/felix-workflows/                 one plugin
+├── plugin.json                         version and plugin identity
+├── references/                         shared rules and full migration map
+├── assets/                             FY icon and preserved resources
+└── skills/<domain>/                    six domain directories
+    ├── SKILL.md                        callable entry and module routing
+    ├── agents/openai.yaml              domain display settings
+    ├── assets/                         domain icon
+    └── references/                     independently editable modules
+        └── <original-workflow>/
+            ├── workflow.md             complete original instructions
+            └── references/, assets/    original supporting files, when present
 ```
 
-A Skill describes when to use a workflow, what to read, which steps to follow, and how to verify its result. Supporting documents can be edited individually. The [workflow catalog](docs/workflows.md) links every current entry.
+A domain Skill selects the relevant complete workflow and its supporting rules, then checks the result within the authorized scope. Supporting documents can be edited individually. The [workflow catalog](docs/workflows.md) links all six entries and every preserved module. The [migration map](plugins/felix-workflows/references/skill-map.md) maps old names to files; old module names are not additional callable Skill aliases.
 
 ## Customize Your Workflow
 
 The editable source lives in `plugins/felix-workflows/`.
 
-1. Open `skills/<skill-name>/SKILL.md` or one of its linked reference files.
+1. Open `skills/<domain>/SKILL.md` to edit routing, or its linked `references/<original-workflow>/workflow.md` and supporting Markdown to edit detailed rules.
 2. Save your changes while preserving stable Skill names and relative paths.
 3. Reinstall from your local marketplace, then use a new conversation.
 
@@ -95,6 +103,8 @@ These workflows include Felix's preferences. When adapting them, confirm your ow
 | [Customization](docs/customization.md) | Edit Markdown, assets, and display settings |
 | [Behavior acceptance cases](docs/skill-acceptance.md) | Review scenarios for workflow behavior |
 | [Changelog](CHANGELOG.md) | Preserved version notes |
+| [Migration notes](docs/six-domain-migration.md) | Preserved rules, old-name mapping, and verification limits |
+| [Preserved documentation](docs/preserved/README.md) | Exact source before this publication edit |
 | [Previous README](docs/archive/readme-before-bilingual.md) | Historical source preserved in full |
 
 Maintained by [Felix Yang](https://github.com/Felix-Yang-369).
