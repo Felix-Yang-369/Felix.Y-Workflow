@@ -1,0 +1,14 @@
+{
+  "description": "Exact current documentation before local 0.5.1 architecture adjustment; original relative paths remain historical source.",
+  "files": {
+    "README.md": "ca0808b1b4d89f52042a5563bc3933a75c7d6314ef3d48fb18fd21e215314667",
+    "README.zh-CN.md": "13dc71f468fa82c632b4a98ba0f23a29245882a31730031fb39f9dd58e598dea",
+    "CHANGELOG.md": "2a48916f4929ca90004cd4b62a451a1124160550bb4f396b3104f98e61ac250e",
+    "docs/workflows.md": "7640e51cc4d3e18cce5fb21511a90972a118fd639a99bd4ee8448b4d071d34d4",
+    "docs/installation.md": "a37dad1fb5e2e2b3217200082e0ab4eb93fb66d730ef9d5c2366a026ca274190",
+    "docs/customization.md": "235eb44b2abded99042e76c7917b6f2c21c4e0341c08c304ea5b60e3e13b7104",
+    "docs/skill-acceptance.md": "b48be0a4a5fcd09eb02d980507c5bbaca408275a4d3f1aa927646ee89ab7accd",
+    "docs/six-domain-migration.md": "a5d8fb087cf6f3597ca72c1dea8fae9a891d544e0d98331a3296109f0841bdce",
+    "docs/preserved/README.md": "298bfcdd21c00c64b2afe726cc05948392d1127c2065137e29b982a9bc971394"
+  }
+}

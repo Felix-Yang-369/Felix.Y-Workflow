@@ -6,14 +6,14 @@
   </picture>
 
   <p>Your personal workflow library, built from editable Markdown.</p>
-  <p><strong>0.5.0 · Six Skill entries · Fully editable workflow modules</strong></p>
-  <p><strong>English</strong> · <a href="./README.zh-CN.md">简体中文</a></p>
+  <p><strong>0.5.1 · Academic Notes and Industry Notes first</strong></p>
+  <p><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
   <p><a href="#quick-start">Quick Start</a> · <a href="#six-domains">Six Domains</a> · <a href="#customize-your-workflow">Customize</a> · <a href="#documentation">Documentation</a></p>
 </div>
 
 ## Overview
 
-FELIX WORKFLOW packages Felix's repeatable workflows into one Codex plugin. It brings together knowledge organization, finance, calendar management, learning, research, and visual creation, with the instructions kept in files you can read and edit.
+FELIX WORKFLOW packages Felix's repeatable workflows into one Codex plugin. It brings together academic notes, industry notes, finance, calendars, learning, and personal creative works, with the instructions kept in files you can read and edit.
 
 - **Make the rules yours.** Edit a domain’s `SKILL.md` and each full workflow or method file independently.
 - **Use focused workflows.** Choose the Skill for your task, then load the relevant references.
@@ -21,16 +21,20 @@ FELIX WORKFLOW packages Felix's repeatable workflows into one Codex plugin. It b
 
 ## Six Domains
 
-**0.5.0 exposes six callable Skill entries.** All 13 original workflows, their rules, supporting files, icons, and examples remain complete reference modules. Finance adds two method files for cash flow and portfolio reviews; it does not include personal financial records.
+**Version 0.5.1 exposes six entries, with Academic Notes and Industry Notes first.** All 13 original workflow modules and resources are retained, with user-approved rule refinements. Note covers and company logos belong to the corresponding note entry; Creative manages personal blog, Douyin, and Xiaohongshu works.
 
-| Domain entry | Invoke | What it covers | Editable modules |
-|:--|:--|:--|:--|
-| 📚 [**Knowledge**](plugins/felix-workflows/skills/knowledge-management/SKILL.md) | `$knowledge-management` | Notes, databases, structure, and supporting illustrations | [3 preserved modules](docs/workflows.md#knowledge) |
-| 💰 [**Finance**](plugins/felix-workflows/skills/finance-management/SKILL.md) | `$finance-management` | Cash flow, reconciliation, and investment reviews | [2 new method files](docs/workflows.md#finance) |
-| 📅 [**Planning**](plugins/felix-workflows/skills/schedule-management/SKILL.md) | `$schedule-management` | Source-backed academic calendars and schedule checks | [1 preserved module](docs/workflows.md#planning) |
-| 🎓 [**Learning**](plugins/felix-workflows/skills/learning-management/SKILL.md) | `$learning-management` | Concepts, systems, and course-fit decisions | [3 preserved modules](docs/workflows.md#learning) |
-| 🔎 [**Research**](plugins/felix-workflows/skills/research-management/SKILL.md) | `$research-management` | Industry structure and company information | [2 preserved modules](docs/workflows.md#research) |
-| 🎨 [**Creative**](plugins/felix-workflows/skills/creative-management/SKILL.md) | `$creative-management` | Discipline covers, industry covers, and company logos | [4 preserved modules](docs/workflows.md#creative) |
+| Order | Domain entry | Invoke | Responsibility | Editable modules |
+|:--|:--|:--|:--|:--|
+| 1 | [Academic Notes](plugins/felix-workflows/skills/academic-notes/SKILL.md) | `$academic-notes` | Academic databases, notes, illustrations, and both discipline-cover styles | [5 preserved modules](docs/workflows.md#academic-notes) |
+| 2 | [Industry Notes](plugins/felix-workflows/skills/industry-notes/SKILL.md) | `$industry-notes` | Industry and company notes, fields, industry covers, and company logos | [4 preserved modules](docs/workflows.md#industry-notes) |
+| 3 | [Finance](plugins/felix-workflows/skills/finance-management/SKILL.md) | `$finance-management` | Cash flow, reconciliation, and investment reviews | [2 finance method files](docs/workflows.md#finance) |
+| 4 | [Planning](plugins/felix-workflows/skills/schedule-management/SKILL.md) | `$schedule-management` | Academic calendars and schedule checks | [1 preserved module](docs/workflows.md#planning) |
+| 5 | [Learning](plugins/felix-workflows/skills/learning-management/SKILL.md) | `$learning-management` | Concepts, systems, and course-fit decisions | [3 preserved modules](docs/workflows.md#learning) |
+| 6 | [Creative](plugins/felix-workflows/skills/creative-management/SKILL.md) | `$creative-management` | Personal blog, Douyin, and Xiaohongshu works | [3 platform modules](docs/workflows.md#creative) |
+
+> Version 0.5.1 is available from GitHub and editable local source. For source you can maintain yourself, follow the [local installation guide](docs/installation.md).
+
+Academic-note rules now include the fixed Introduction template and cover columns, optional fifth-level Core Questions, preserved user layouts, H1 `and` → `&`, and the confirmed database fields, progress, difficulty, and theme-color rules. See the [changelog](CHANGELOG.md) for the full update.
 
 ## Quick Start
 
@@ -44,7 +48,7 @@ codex plugin add felix-workflows@felix-workflows
 Start a new conversation and invoke a workflow, for example:
 
 ```text
-Use $knowledge-management to review this academic note and propose improvements.
+Use $academic-notes to review this academic note and propose improvements.
 ```
 
 The repository name is `Felix.Y-Workflow`; the stable plugin and marketplace identifiers remain `felix-workflows`.
@@ -106,5 +110,7 @@ These workflows include Felix's preferences. When adapting them, confirm your ow
 | [Migration notes](docs/six-domain-migration.md) | Preserved rules, old-name mapping, and verification limits |
 | [Preserved documentation](docs/preserved/README.md) | Exact source before this publication edit |
 | [Previous README](docs/archive/readme-before-bilingual.md) | Historical source preserved in full |
+
+See the [current architecture](docs/architecture.md) for responsibilities and module ownership.
 
 Maintained by [Felix Yang](https://github.com/Felix-Yang-369).

@@ -1,5 +1,7 @@
 # 六类入口迁移 · 0.5.0
 
+> 本文记录 0.5.0 初次整合；0.5.1 的职责与位置以[当前架构](architecture.md)为准。链接已指向当前完整模块。
+
 版本 0.4.21 → 0.5.0：一个 FELIX WORKFLOW 插件总包，六个可调用的领域 Skill。原 13 项工作流全文及全部参考、素材和 UI 元数据保存在各领域的 `references/<original-workflow>/`，原 `SKILL.md` 正文改名为 `workflow.md`。金融管理的 `cashflow.md` 和 `portfolio.md` 是新增方法文件。
 
 - [六个入口与全部独立文件](workflows.md)

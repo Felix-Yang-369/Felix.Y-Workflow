@@ -4,6 +4,8 @@
 
 ## Source layout
 
+The first two entries are `skills/academic-notes/` and `skills/industry-notes/`. The original cover and Logo modules now live under their owning note entry. Creative has three independently editable platform files; see the [architecture and module map](architecture.md).
+
 `plugins/felix-workflows/` is the editable plugin source. Each installed cache is generated from it.
 
 ```text
@@ -33,7 +35,7 @@ plugins/felix-workflows/
 4. Validate the changed files and referenced resources.
 5. Reinstall from the local marketplace and check the installed files. Use a new conversation to verify actual behavior.
 
-Detailed guidance lives in the workflow's linked reference files. For example, the [academic database rules](../plugins/felix-workflows/skills/knowledge-management/references/notion-academic-database-manager/workflow.md) and [academic note format guide](../plugins/felix-workflows/skills/knowledge-management/references/notion-note-steward/references/format-guide.md) remain separately editable.
+Detailed guidance lives in the workflow's linked reference files. For example, the [academic database rules](../plugins/felix-workflows/skills/academic-notes/references/notion-academic-database-manager/workflow.md) and [academic note format guide](../plugins/felix-workflows/skills/academic-notes/references/notion-note-steward/references/format-guide.md) remain separately editable.
 
 ## Display names and visual assets
 
@@ -82,3 +84,7 @@ Use the [behavior acceptance cases](skill-acceptance.md). Check manifests, Skill
 The [migration notes](../plugins/felix-workflows/references/migration-notes.md) record the latest database edits and existing unresolved conflicts. Publication preserves those files byte for byte; it does not silently choose between conflicting rules.
 
 [迁移说明](../plugins/felix-workflows/references/migration-notes.md)记录了最新学科数据库修改及原文已有冲突。本次发布逐字节保留包内文件，不擅自统一这些规则，也不恢复用户刚删除的段落。
+
+## 0.5.1 模块归属
+
+学科笔记管理学科数据库、正文、插图和两类学科封面；行业笔记管理行业、公司、行业封面和公司 Logo。创作管理的 `references/personal-blog.md`、`douyin.md`、`xiaohongshu.md` 分别维护个人博客、抖音和小红书作品规则。入口顺序见[模块索引](../plugins/felix-workflows/references/skill-map.md)。旧入口与元数据保留在插件 `references/architecture-history/0.5.0/`，当前规则始终在维护原件中编辑。

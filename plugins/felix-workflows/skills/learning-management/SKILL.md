@@ -17,4 +17,4 @@ description: Felix 学习抽象概念、具象系统、数学推理、计算机�
 
 课程评估所引用的历史或服务能力须按当前实际可用性核实；缺少某种历史工具时，使用已获授权的现有课程材料，并说明缺口，不编造读取结果。
 
-整理知识库时转读[知识管理](../knowledge-management/SKILL.md)，维护课程日历时转读[日程管理](../schedule-management/SKILL.md)。教学状态不会自动更新 Notion 学习进度。三个原模块中的细节、例子和表达检查完整保留。
+整理知识库时转读[学科笔记](../academic-notes/SKILL.md)，维护课程日历时转读[日程管理](../schedule-management/SKILL.md)。教学状态不会自动更新 Notion 学习进度。三个原模块中的细节、例子和表达检查完整保留。

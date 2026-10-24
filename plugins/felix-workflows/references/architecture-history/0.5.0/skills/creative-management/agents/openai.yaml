@@ -1,0 +1,9 @@
+interface:
+  display_name: 创作管理
+  short_description: 按用户已认可系列制作学科封面、行业封面与公司标识，并分别验收实际显示
+  icon_small: ./assets/icon.svg
+  icon_large: ./assets/icon.svg
+  brand_color: '#CA762A'
+  default_prompt: 使用 $creative-management 处理当前任务，读取对应完整模块并保留已确认规则与原有内容。
+policy:
+  allow_implicit_invocation: true

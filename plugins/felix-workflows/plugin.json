@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "felix-workflows",
-  "version": "0.5.0",
-  "description": "Felix 的知识、金融、日程、学习、研究与创作工作流",
+  "version": "0.5.1",
+  "description": "Felix 的学科笔记、行业笔记、金融、日程、学习与个人作品工作流",
   "author": {
     "name": "Felix Yang"
   },
@@ -10,8 +10,8 @@
     "com.openai": {
       "interface": {
         "displayName": "FELIX WORKFLOW",
-        "shortDescription": "知识、金融、日程、学习、研究与创作的六类个人工作流",
-        "longDescription": "六类可独立编辑的工作流入口，完整保留原十三项学科、行业公司、课程讲解和视觉素材规范及全部参考资源，并提供收支对账与投资复盘方法。",
+        "shortDescription": "学科笔记、行业笔记与四类个人管理工作流",
+        "longDescription": "学科笔记和行业笔记为前两个一级入口，分别承接笔记正文及相关封面、插图和 Logo；创作管理负责个人博客、抖音和小红书作品，金融、日程和学习管理继续独立维护。原十三项工作流全文与全部参考素材完整保留。",
         "developerName": "Felix Yang",
         "category": "Productivity",
         "brandColor": "#55786D",
@@ -19,9 +19,9 @@
         "composerIcon": "./assets/icon.svg",
         "capabilities": [],
         "defaultPrompt": [
-          "使用 $knowledge-management 整理这篇笔记或数据库，完整读取对应模块并保留原有内容。",
-          "使用 $finance-management 按真实数据核对流水、交易档案或投资复盘，说明来源与核对状态。",
-          "使用 $schedule-management 核对并维护我指定范围内的日程，沿用当前日历规则。"
+          "使用 $academic-notes 维护指定学科笔记、数据库、插图或学科封面，读取对应完整模块。",
+          "使用 $industry-notes 维护指定行业或公司笔记及其封面、Logo，保留现有内容与字段。",
+          "使用 $creative-management 管理我的个人博客、抖音或小红书作品，先识别本次作品阶段。"
         ]
       }
     }

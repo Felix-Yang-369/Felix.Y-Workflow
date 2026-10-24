@@ -6,14 +6,14 @@
   </picture>
 
   <p>用可编辑的 Markdown，构建自己的个人工作流库。</p>
-  <p><strong>0.5.0 · 六类 Skill 入口 · 工作流 Markdown 独立编辑</strong></p>
-  <p><a href="./README.md">English</a> · <strong>简体中文</strong></p>
+  <p><strong>0.5.1 · 学科笔记与行业笔记优先 · MD 独立编辑</strong></p>
+  <p><a href="README.md">English</a> · <strong>简体中文</strong></p>
   <p><a href="#快速开始">快速开始</a> · <a href="#六大领域">六大领域</a> · <a href="#自定义规则">自定义规则</a> · <a href="#文档导航">文档导航</a></p>
 </div>
 
 ## 概览
 
-FELIX WORKFLOW 将 Felix 的常用工作流程打包为一个 Codex 插件，覆盖知识、金融、日程、学习、研究和创作六大类。所有规则都保存在可以直接阅读和修改的文件中。
+FELIX WORKFLOW 将 Felix 的常用工作流程打包为一个 Codex 插件，覆盖学科笔记、行业笔记、金融、日程、学习和创作六大类。所有规则都保存在可以直接阅读和修改的文件中。
 
 - **规则由你控制。** 分别编辑六类入口的 `SKILL.md`、完整工作流和配套 Markdown。
 - **按任务选择流程。** 调用对应 Skill，再读取本次需要的参考文件。
@@ -21,16 +21,20 @@ FELIX WORKFLOW 将 Felix 的常用工作流程打包为一个 Codex 插件，覆
 
 ## 六大领域
 
-**0.5.0 提供六个可调用的 Skill 入口。** 原有 13 项工作流的完整规则、参考文件、图标和示例均保留为独立模块；金融管理新增收支与投资复盘两份方法文件，不包含个人账户记录。
+**0.5.1 提供六个入口，前两位为学科笔记和行业笔记。** 原 13 项工作流模块及全部资源保留，当前规则纳入用户逐条确认的修订；四类笔记视觉模块归入对应笔记入口；创作管理负责个人博客、抖音和小红书作品。
 
-| 领域入口 | 调用名称 | 覆盖内容 | 独立文件 |
-|:--|:--|:--|:--|
-| 📚 [**知识管理**](plugins/felix-workflows/skills/knowledge-management/SKILL.md) | `$knowledge-management` | 笔记、数据库、知识结构与正文插图 | [3 个原有模块](docs/workflows.md#knowledge) |
-| 💰 [**金融管理**](plugins/felix-workflows/skills/finance-management/SKILL.md) | `$finance-management` | 收支、对账与投资复盘 | [2 份新增方法](docs/workflows.md#finance) |
-| 📅 [**日程管理**](plugins/felix-workflows/skills/schedule-management/SKILL.md) | `$schedule-management` | 依据权威来源维护学术日历与核对安排 | [1 个原有模块](docs/workflows.md#planning) |
-| 🎓 [**学习管理**](plugins/felix-workflows/skills/learning-management/SKILL.md) | `$learning-management` | 概念理解、系统讲解与选课评估 | [3 个原有模块](docs/workflows.md#learning) |
-| 🔎 [**研究管理**](plugins/felix-workflows/skills/research-management/SKILL.md) | `$research-management` | 行业结构与公司资料研究 | [2 个原有模块](docs/workflows.md#research) |
-| 🎨 [**创作管理**](plugins/felix-workflows/skills/creative-management/SKILL.md) | `$creative-management` | 学科封面、行业封面与公司标识 | [4 个原有模块](docs/workflows.md#creative) |
+| 顺序 | 一级入口 | 调用名称 | 职责 | 独立文件 |
+|:--|:--|:--|:--|:--|
+| 1 | [学科笔记](plugins/felix-workflows/skills/academic-notes/SKILL.md) | `$academic-notes` | 学科数据库、正文、插图、图解与写实学科封面 | [5 个原有模块](docs/workflows.md#academic-notes) |
+| 2 | [行业笔记](plugins/felix-workflows/skills/industry-notes/SKILL.md) | `$industry-notes` | 行业与公司笔记、企业属性、行业封面、公司 Logo | [4 个原有模块](docs/workflows.md#industry-notes) |
+| 3 | [金融管理](plugins/felix-workflows/skills/finance-management/SKILL.md) | `$finance-management` | 收支、对账与投资复盘 | [2 份金融方法](docs/workflows.md#finance) |
+| 4 | [日程管理](plugins/felix-workflows/skills/schedule-management/SKILL.md) | `$schedule-management` | 课程、考试与日历 | [1 个原有模块](docs/workflows.md#planning) |
+| 5 | [学习管理](plugins/felix-workflows/skills/learning-management/SKILL.md) | `$learning-management` | 抽象／具象讲解及课程评估 | [3 个原有模块](docs/workflows.md#learning) |
+| 6 | [创作管理](plugins/felix-workflows/skills/creative-management/SKILL.md) | `$creative-management` | 个人博客、抖音与小红书作品 | [3 份平台规范](docs/workflows.md#creative) |
+
+> 0.5.1 已同步到 GitHub，也可从本地维护源码安装。需要自行编辑规则时，使用[源码安装说明](docs/installation.md)。
+
+学科笔记已整合本轮确认的固定导论与封面双栏、可选第五级 Core Questions、已有布局保留、H1 英文 `and` → `&`，以及数据库字段、进度、难度与主题色规则。完整更新见[变更记录](CHANGELOG.md)。
 
 ## 快速开始
 
@@ -44,7 +48,7 @@ codex plugin add felix-workflows@felix-workflows
 开启新聊天，并点名使用对应工作流，例如：
 
 ```text
-使用 $knowledge-management 审查这篇学科笔记，先提出具体优化方案。
+使用 $academic-notes 审查这篇学科笔记，先提出具体优化方案。
 ```
 
 GitHub 仓库名为 `Felix.Y-Workflow`，插件与市场的稳定标识仍为 `felix-workflows`。
@@ -106,5 +110,7 @@ codex plugin add felix-workflows@felix-workflows --json
 | [迁移说明](docs/six-domain-migration.md) | 规则保留、旧名对应与验收边界 |
 | [文档原文存档](docs/preserved/README.md) | 本次发布改写前的完整文档 |
 | [旧版 README](docs/archive/readme-before-bilingual.md) | 完整保留的历史原文 |
+
+当前[架构说明](docs/architecture.md)列出完整职责与模块归属。
 
 维护者：[Felix Yang](https://github.com/Felix-Yang-369)。

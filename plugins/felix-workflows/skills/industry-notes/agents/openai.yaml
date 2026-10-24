@@ -1,0 +1,9 @@
+interface:
+  display_name: "行业笔记"
+  short_description: "维护行业分类、公司正文和企业属性，并按已有规则处理行业封面与公司标识"
+  icon_small: "./assets/icon.svg"
+  icon_large: "./assets/icon.svg"
+  brand_color: "#285EA8"
+  default_prompt: "使用 $industry-notes 处理当前任务，读取对应独立模块并保留已确认规则与现有内容。"
+policy:
+  allow_implicit_invocation: true

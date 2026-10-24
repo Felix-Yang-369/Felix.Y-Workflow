@@ -1,0 +1,660 @@
+{
+  "from_version": "0.5.0",
+  "to_version": "0.5.1",
+  "captured_at_utc": "20261024T005009Z",
+  "entry_order": [
+    "academic-notes",
+    "industry-notes",
+    "finance-management",
+    "schedule-management",
+    "learning-management",
+    "creative-management"
+  ],
+  "files": [
+    {
+      "source": "plugin.json",
+      "destination": "references/architecture-history/0.5.0/plugin.json",
+      "mode": "archive-exact",
+      "source_sha256": "8f55436c044fedfeaca696592c7a9625b79dd20b02fc25e93923cae7a222afd9",
+      "destination_sha256": "8f55436c044fedfeaca696592c7a9625b79dd20b02fc25e93923cae7a222afd9"
+    },
+    {
+      "source": ".codex-plugin/plugin.json",
+      "destination": "references/architecture-history/0.5.0/.codex-plugin/plugin.json",
+      "mode": "archive-exact",
+      "source_sha256": "ce261171dc35070df69ee2f5f85946408df8b4d0d20dcfe99719a3e40c07a657",
+      "destination_sha256": "ce261171dc35070df69ee2f5f85946408df8b4d0d20dcfe99719a3e40c07a657"
+    },
+    {
+      "source": "assets/icon.svg",
+      "destination": "assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "bc5ca8cbfcf1418484a143a03b4a5ee24d6729793eebdc9e810ab499ab4287d9",
+      "destination_sha256": "bc5ca8cbfcf1418484a143a03b4a5ee24d6729793eebdc9e810ab499ab4287d9"
+    },
+    {
+      "source": "assets/skill-icons-preview.png",
+      "destination": "assets/skill-icons-preview.png",
+      "mode": "byte-exact",
+      "source_sha256": "4f66f9bfbdeee373ff11e74d096480233cbb963f7a8d755e2369a1466f70e983",
+      "destination_sha256": "4f66f9bfbdeee373ff11e74d096480233cbb963f7a8d755e2369a1466f70e983"
+    },
+    {
+      "source": "references/execution-rules.md",
+      "destination": "references/execution-rules.md",
+      "mode": "links-only",
+      "source_sha256": "b93a234450491729bc5ade2a3c753926fb70699ac2696c6d2d995de93898302d",
+      "destination_sha256": "b93a234450491729bc5ade2a3c753926fb70699ac2696c6d2d995de93898302d"
+    },
+    {
+      "source": "references/felix-preferences.md",
+      "destination": "references/felix-preferences.md",
+      "mode": "links-only",
+      "source_sha256": "e7669c6b2a568a5b91a915005b27b8a2694dd97b6f837807f672f9792f826b27",
+      "destination_sha256": "e7669c6b2a568a5b91a915005b27b8a2694dd97b6f837807f672f9792f826b27"
+    },
+    {
+      "source": "references/migration-map.json",
+      "destination": "references/architecture-history/0.5.0/references/migration-map.json",
+      "mode": "archive-exact",
+      "source_sha256": "7178fed7a90cc150bc07f2e1e6b9c351ae9b4cb4bbf1012ea30708433c09d120",
+      "destination_sha256": "7178fed7a90cc150bc07f2e1e6b9c351ae9b4cb4bbf1012ea30708433c09d120"
+    },
+    {
+      "source": "references/migration-notes.md",
+      "destination": "references/migration-notes.md",
+      "mode": "links-only",
+      "source_sha256": "e7647251cb30cf444d0285940efb5bcbba8b78da54853ff05a375550384bfbe1",
+      "destination_sha256": "e7647251cb30cf444d0285940efb5bcbba8b78da54853ff05a375550384bfbe1"
+    },
+    {
+      "source": "references/skill-map.md",
+      "destination": "references/architecture-history/0.5.0/references/skill-map.md",
+      "mode": "archive-exact",
+      "source_sha256": "7b7ba56f38bd09e2e58843a09a8bd7e449e4b3ddd30e5e959f5ac613faa7f629",
+      "destination_sha256": "7b7ba56f38bd09e2e58843a09a8bd7e449e4b3ddd30e5e959f5ac613faa7f629"
+    },
+    {
+      "source": "skills/creative-management/SKILL.md",
+      "destination": "references/architecture-history/0.5.0/skills/creative-management/SKILL.md",
+      "mode": "archive-exact",
+      "source_sha256": "462d288135173eeedbb5b9aeca998afca63bd4f441f3a86c3f1b7fd46a61413c",
+      "destination_sha256": "462d288135173eeedbb5b9aeca998afca63bd4f441f3a86c3f1b7fd46a61413c"
+    },
+    {
+      "source": "skills/finance-management/SKILL.md",
+      "destination": "references/architecture-history/0.5.0/skills/finance-management/SKILL.md",
+      "mode": "archive-exact",
+      "source_sha256": "157faa876ff05de1b864fef9a6cbc5924fc45ce6b358ac2983c6a763cfbb0174",
+      "destination_sha256": "157faa876ff05de1b864fef9a6cbc5924fc45ce6b358ac2983c6a763cfbb0174"
+    },
+    {
+      "source": "skills/knowledge-management/SKILL.md",
+      "destination": "references/architecture-history/0.5.0/skills/knowledge-management/SKILL.md",
+      "mode": "archive-exact",
+      "source_sha256": "28c6d4fd86b4ebd0a9c6d65e28ec83874e55896801c007f9dbfedb3ce6d9cade",
+      "destination_sha256": "28c6d4fd86b4ebd0a9c6d65e28ec83874e55896801c007f9dbfedb3ce6d9cade"
+    },
+    {
+      "source": "skills/learning-management/SKILL.md",
+      "destination": "references/architecture-history/0.5.0/skills/learning-management/SKILL.md",
+      "mode": "archive-exact",
+      "source_sha256": "4be390b3cf095fdbd55cefbde65df900379e34493a1adfae54a1fb58e5eb59ab",
+      "destination_sha256": "4be390b3cf095fdbd55cefbde65df900379e34493a1adfae54a1fb58e5eb59ab"
+    },
+    {
+      "source": "skills/research-management/SKILL.md",
+      "destination": "references/architecture-history/0.5.0/skills/research-management/SKILL.md",
+      "mode": "archive-exact",
+      "source_sha256": "bc918299f7d60532f06f9d33778f99d370b2692d7ac092afb428898534aa4635",
+      "destination_sha256": "bc918299f7d60532f06f9d33778f99d370b2692d7ac092afb428898534aa4635"
+    },
+    {
+      "source": "skills/schedule-management/SKILL.md",
+      "destination": "references/architecture-history/0.5.0/skills/schedule-management/SKILL.md",
+      "mode": "archive-exact",
+      "source_sha256": "531efef6a84aa4d08ab5614cdda0d95c8b590a9728399b1ce551e8c51b35d6c9",
+      "destination_sha256": "531efef6a84aa4d08ab5614cdda0d95c8b590a9728399b1ce551e8c51b35d6c9"
+    },
+    {
+      "source": "skills/schedule-management/agents/openai.yaml",
+      "destination": "references/architecture-history/0.5.0/skills/schedule-management/agents/openai.yaml",
+      "mode": "archive-exact",
+      "source_sha256": "9cf69b00323f5e16e4447fe2442a1ad9bc94a8585e34c75365c0cdaa905a97e0",
+      "destination_sha256": "9cf69b00323f5e16e4447fe2442a1ad9bc94a8585e34c75365c0cdaa905a97e0"
+    },
+    {
+      "source": "skills/schedule-management/assets/icon.svg",
+      "destination": "skills/schedule-management/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "a71a72ee0b6f58fc6e65a54538c31a8be6a67c2e2afb8565e7f8e00f27d94418",
+      "destination_sha256": "a71a72ee0b6f58fc6e65a54538c31a8be6a67c2e2afb8565e7f8e00f27d94418"
+    },
+    {
+      "source": "skills/schedule-management/references/schedule-management/workflow.md",
+      "destination": "skills/schedule-management/references/schedule-management/workflow.md",
+      "mode": "links-only",
+      "source_sha256": "a4e7670ff416398a324da527eeb46576ad727f41fcf44cd1f4e313d5dba616c8",
+      "destination_sha256": "a4e7670ff416398a324da527eeb46576ad727f41fcf44cd1f4e313d5dba616c8"
+    },
+    {
+      "source": "skills/schedule-management/references/schedule-management/agents/openai.yaml",
+      "destination": "skills/schedule-management/references/schedule-management/agents/openai.yaml",
+      "mode": "byte-exact",
+      "source_sha256": "d41faa31f6a582cff25964b5cc0c4d6080d2a0724f4ef6c55cc6a09db142003c",
+      "destination_sha256": "d41faa31f6a582cff25964b5cc0c4d6080d2a0724f4ef6c55cc6a09db142003c"
+    },
+    {
+      "source": "skills/schedule-management/references/schedule-management/assets/icon.svg",
+      "destination": "skills/schedule-management/references/schedule-management/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "a71a72ee0b6f58fc6e65a54538c31a8be6a67c2e2afb8565e7f8e00f27d94418",
+      "destination_sha256": "a71a72ee0b6f58fc6e65a54538c31a8be6a67c2e2afb8565e7f8e00f27d94418"
+    },
+    {
+      "source": "skills/schedule-management/references/schedule-management/references/calendar-policy.md",
+      "destination": "skills/schedule-management/references/schedule-management/references/calendar-policy.md",
+      "mode": "links-only",
+      "source_sha256": "b421cce01fd8cb041a273e52333f47862d23118ea92fa1ccd60acf2dc534a8a7",
+      "destination_sha256": "b421cce01fd8cb041a273e52333f47862d23118ea92fa1ccd60acf2dc534a8a7"
+    },
+    {
+      "source": "skills/schedule-management/references/schedule-management/references/notion-calendar-windows.md",
+      "destination": "skills/schedule-management/references/schedule-management/references/notion-calendar-windows.md",
+      "mode": "links-only",
+      "source_sha256": "662df5d7e94aead51cf5ed26ae54d30fb7ba39e3e4a0a6cb10f75601dc53b3a5",
+      "destination_sha256": "662df5d7e94aead51cf5ed26ae54d30fb7ba39e3e4a0a6cb10f75601dc53b3a5"
+    },
+    {
+      "source": "skills/schedule-management/references/schedule-management/references/semester-workflow.md",
+      "destination": "skills/schedule-management/references/schedule-management/references/semester-workflow.md",
+      "mode": "links-only",
+      "source_sha256": "80d41c59885800a953ef9bc0af465dacb5eb08ddd5b386cce86f817a65a02b59",
+      "destination_sha256": "80d41c59885800a953ef9bc0af465dacb5eb08ddd5b386cce86f817a65a02b59"
+    },
+    {
+      "source": "skills/research-management/agents/openai.yaml",
+      "destination": "references/architecture-history/0.5.0/skills/research-management/agents/openai.yaml",
+      "mode": "archive-exact",
+      "source_sha256": "5b2e58fcfc63c7d168ba60615ce0183a23dc402f1a1229e60f9f9eed8e5eb48c",
+      "destination_sha256": "5b2e58fcfc63c7d168ba60615ce0183a23dc402f1a1229e60f9f9eed8e5eb48c"
+    },
+    {
+      "source": "skills/research-management/assets/icon.svg",
+      "destination": "skills/industry-notes/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "0c2fd12ad408759778fd1c1d6df38ab40cf080746a35a734c0bc3259cc2861c0",
+      "destination_sha256": "0c2fd12ad408759778fd1c1d6df38ab40cf080746a35a734c0bc3259cc2861c0"
+    },
+    {
+      "source": "skills/research-management/references/notion-company-steward/workflow.md",
+      "destination": "skills/industry-notes/references/notion-company-steward/workflow.md",
+      "mode": "links-only",
+      "source_sha256": "82006bca992f0414021a5ecb5ce8062ef503a24bee60dc216fbf8c71908d335e",
+      "destination_sha256": "c10b6a720bbaf6bdd12cff67adbb48e08a8bded66bccb5cacf4b7b87ce01f487"
+    },
+    {
+      "source": "skills/research-management/references/notion-industry-steward/workflow.md",
+      "destination": "skills/industry-notes/references/notion-industry-steward/workflow.md",
+      "mode": "links-only",
+      "source_sha256": "f3db432e6fcbf742549879753ddbcfbce6e06609c5695d536acee6bf9120f156",
+      "destination_sha256": "0a2d92e539aaeeceba3d7382edf075b307567ee20590bc7f365722bcbcb11262"
+    },
+    {
+      "source": "skills/research-management/references/notion-industry-steward/agents/openai.yaml",
+      "destination": "skills/industry-notes/references/notion-industry-steward/agents/openai.yaml",
+      "mode": "byte-exact",
+      "source_sha256": "ade13c061e63ab6fcea3cbd8e82de2b17ae530d71988e6d3ecee8b2cec2f3481",
+      "destination_sha256": "ade13c061e63ab6fcea3cbd8e82de2b17ae530d71988e6d3ecee8b2cec2f3481"
+    },
+    {
+      "source": "skills/research-management/references/notion-industry-steward/assets/icon.svg",
+      "destination": "skills/industry-notes/references/notion-industry-steward/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "912a4949722d28c53c2d95c1788c2d62f5740046c243491500a4765e61eebf79",
+      "destination_sha256": "912a4949722d28c53c2d95c1788c2d62f5740046c243491500a4765e61eebf79"
+    },
+    {
+      "source": "skills/research-management/references/notion-industry-steward/references/architecture.md",
+      "destination": "skills/industry-notes/references/notion-industry-steward/references/architecture.md",
+      "mode": "links-only",
+      "source_sha256": "4d71be0b91bb522322e67eab103ac15f2a3ed41875c980fba0d87c6ee56a0dca",
+      "destination_sha256": "4d71be0b91bb522322e67eab103ac15f2a3ed41875c980fba0d87c6ee56a0dca"
+    },
+    {
+      "source": "skills/research-management/references/notion-industry-steward/references/company-database-fields.md",
+      "destination": "skills/industry-notes/references/notion-industry-steward/references/company-database-fields.md",
+      "mode": "links-only",
+      "source_sha256": "83b3650b6696d13f142e70914b2644c128f53f231a9a27e3d33f190ac665ab7b",
+      "destination_sha256": "83b3650b6696d13f142e70914b2644c128f53f231a9a27e3d33f190ac665ab7b"
+    },
+    {
+      "source": "skills/research-management/references/notion-company-steward/agents/openai.yaml",
+      "destination": "skills/industry-notes/references/notion-company-steward/agents/openai.yaml",
+      "mode": "byte-exact",
+      "source_sha256": "aa9f3a9c8420302f71391559e60200c29a77c15052b2687abfe557423b6bece1",
+      "destination_sha256": "aa9f3a9c8420302f71391559e60200c29a77c15052b2687abfe557423b6bece1"
+    },
+    {
+      "source": "skills/research-management/references/notion-company-steward/assets/icon.svg",
+      "destination": "skills/industry-notes/references/notion-company-steward/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "0c2fd12ad408759778fd1c1d6df38ab40cf080746a35a734c0bc3259cc2861c0",
+      "destination_sha256": "0c2fd12ad408759778fd1c1d6df38ab40cf080746a35a734c0bc3259cc2861c0"
+    },
+    {
+      "source": "skills/research-management/references/notion-company-steward/references/company-database-fields.md",
+      "destination": "skills/industry-notes/references/notion-company-steward/references/company-database-fields.md",
+      "mode": "links-only",
+      "source_sha256": "998025f0ccf552ba4d7c64f43cf7323c576d1b7fca7571a829435eb958723393",
+      "destination_sha256": "998025f0ccf552ba4d7c64f43cf7323c576d1b7fca7571a829435eb958723393"
+    },
+    {
+      "source": "skills/research-management/references/notion-company-steward/references/company-guide.md",
+      "destination": "skills/industry-notes/references/notion-company-steward/references/company-guide.md",
+      "mode": "links-only",
+      "source_sha256": "e644cf6218e691dc46f8f9b03dede3127907c18bc3f25314f2e84c9d65b26e8d",
+      "destination_sha256": "e644cf6218e691dc46f8f9b03dede3127907c18bc3f25314f2e84c9d65b26e8d"
+    },
+    {
+      "source": "skills/learning-management/agents/openai.yaml",
+      "destination": "references/architecture-history/0.5.0/skills/learning-management/agents/openai.yaml",
+      "mode": "archive-exact",
+      "source_sha256": "c7d3e9f6cb8ca5ed2ea4ccf3d4d38c07cb94e4a8024753e792884ee0f07ceb65",
+      "destination_sha256": "c7d3e9f6cb8ca5ed2ea4ccf3d4d38c07cb94e4a8024753e792884ee0f07ceb65"
+    },
+    {
+      "source": "skills/learning-management/assets/icon.svg",
+      "destination": "skills/learning-management/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "054b76f7d0204682cd8a0a37ffe32a89a25a41c186045d5b01472e558a72ed4a",
+      "destination_sha256": "054b76f7d0204682cd8a0a37ffe32a89a25a41c186045d5b01472e558a72ed4a"
+    },
+    {
+      "source": "skills/learning-management/references/abstract-knowledge-explainer/workflow.md",
+      "destination": "skills/learning-management/references/abstract-knowledge-explainer/workflow.md",
+      "mode": "links-only",
+      "source_sha256": "70167268efa1de33f41292aa4fbce5181916880120a8d316f3d1b9e385390f11",
+      "destination_sha256": "70167268efa1de33f41292aa4fbce5181916880120a8d316f3d1b9e385390f11"
+    },
+    {
+      "source": "skills/learning-management/references/concrete-knowledge-explainer/workflow.md",
+      "destination": "skills/learning-management/references/concrete-knowledge-explainer/workflow.md",
+      "mode": "links-only",
+      "source_sha256": "6bbd718f7ae54462e27e50a41b046380e509c7500a0082f4fd346e4879da63bf",
+      "destination_sha256": "6bbd718f7ae54462e27e50a41b046380e509c7500a0082f4fd346e4879da63bf"
+    },
+    {
+      "source": "skills/learning-management/references/course-evaluation/workflow.md",
+      "destination": "skills/learning-management/references/course-evaluation/workflow.md",
+      "mode": "links-only",
+      "source_sha256": "2de33ea6985aa2379f16df43552eaed79885e11b620a71deddd5428b970b6e57",
+      "destination_sha256": "2de33ea6985aa2379f16df43552eaed79885e11b620a71deddd5428b970b6e57"
+    },
+    {
+      "source": "skills/learning-management/references/course-evaluation/agents/openai.yaml",
+      "destination": "skills/learning-management/references/course-evaluation/agents/openai.yaml",
+      "mode": "byte-exact",
+      "source_sha256": "ad4f30b6d5e01cdcbfd1b4a93c6240c80627d0019ea52acc3dee3f603d5fc3cd",
+      "destination_sha256": "ad4f30b6d5e01cdcbfd1b4a93c6240c80627d0019ea52acc3dee3f603d5fc3cd"
+    },
+    {
+      "source": "skills/learning-management/references/course-evaluation/assets/icon.svg",
+      "destination": "skills/learning-management/references/course-evaluation/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "5af05fbef327efdba17b24c335ed6a664d305c8ded99cae68fddc6f4783a6260",
+      "destination_sha256": "5af05fbef327efdba17b24c335ed6a664d305c8ded99cae68fddc6f4783a6260"
+    },
+    {
+      "source": "skills/learning-management/references/course-evaluation/references/evaluation-framework.md",
+      "destination": "skills/learning-management/references/course-evaluation/references/evaluation-framework.md",
+      "mode": "links-only",
+      "source_sha256": "8da6ebbe682c5b01234dbd5f8f293fd0d6978baf96f024b1709d8d4b88c757a8",
+      "destination_sha256": "8da6ebbe682c5b01234dbd5f8f293fd0d6978baf96f024b1709d8d4b88c757a8"
+    },
+    {
+      "source": "skills/learning-management/references/concrete-knowledge-explainer/agents/openai.yaml",
+      "destination": "skills/learning-management/references/concrete-knowledge-explainer/agents/openai.yaml",
+      "mode": "byte-exact",
+      "source_sha256": "4d5ddbe2906fb9daf5a9841c0235dded689eb68c419073ae36aea7b2af5af9d3",
+      "destination_sha256": "4d5ddbe2906fb9daf5a9841c0235dded689eb68c419073ae36aea7b2af5af9d3"
+    },
+    {
+      "source": "skills/learning-management/references/concrete-knowledge-explainer/assets/icon.svg",
+      "destination": "skills/learning-management/references/concrete-knowledge-explainer/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "d77939a5126e2e347334b6065a88d92f882dda6e12eaa9ce4bcf0275bf2c6989",
+      "destination_sha256": "d77939a5126e2e347334b6065a88d92f882dda6e12eaa9ce4bcf0275bf2c6989"
+    },
+    {
+      "source": "skills/learning-management/references/abstract-knowledge-explainer/agents/openai.yaml",
+      "destination": "skills/learning-management/references/abstract-knowledge-explainer/agents/openai.yaml",
+      "mode": "byte-exact",
+      "source_sha256": "2f28a3630e59a70a68047d93a1b68da19bc3fb374a209b2185eca08e9c083070",
+      "destination_sha256": "2f28a3630e59a70a68047d93a1b68da19bc3fb374a209b2185eca08e9c083070"
+    },
+    {
+      "source": "skills/learning-management/references/abstract-knowledge-explainer/assets/icon.svg",
+      "destination": "skills/learning-management/references/abstract-knowledge-explainer/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "054b76f7d0204682cd8a0a37ffe32a89a25a41c186045d5b01472e558a72ed4a",
+      "destination_sha256": "054b76f7d0204682cd8a0a37ffe32a89a25a41c186045d5b01472e558a72ed4a"
+    },
+    {
+      "source": "skills/knowledge-management/agents/openai.yaml",
+      "destination": "references/architecture-history/0.5.0/skills/knowledge-management/agents/openai.yaml",
+      "mode": "archive-exact",
+      "source_sha256": "c3bf548eb7124dcb2d74b52562a8ed26afd79786b0d63d5366a0c9b49bfb0ed6",
+      "destination_sha256": "c3bf548eb7124dcb2d74b52562a8ed26afd79786b0d63d5366a0c9b49bfb0ed6"
+    },
+    {
+      "source": "skills/knowledge-management/assets/icon.svg",
+      "destination": "skills/academic-notes/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "cbe18342c21265e51f9afe5269e565cb5015da3b5df9d929cce13481be8d321e",
+      "destination_sha256": "cbe18342c21265e51f9afe5269e565cb5015da3b5df9d929cce13481be8d321e"
+    },
+    {
+      "source": "skills/knowledge-management/references/academic-illustration/workflow.md",
+      "destination": "skills/academic-notes/references/academic-illustration/workflow.md",
+      "mode": "links-only",
+      "source_sha256": "5c6daf85f656e26d1bfa4255a4f38d0c6762e53eee2b13e438da4dc8485b9d6c",
+      "destination_sha256": "5c6daf85f656e26d1bfa4255a4f38d0c6762e53eee2b13e438da4dc8485b9d6c"
+    },
+    {
+      "source": "skills/knowledge-management/references/notion-academic-database-manager/workflow.md",
+      "destination": "skills/academic-notes/references/notion-academic-database-manager/workflow.md",
+      "mode": "links-only",
+      "source_sha256": "b2b002fd0ac03f9e3cbd620bebe35da917ebdcabb289481ad6dc4cc4f1fe62ee",
+      "destination_sha256": "b2b002fd0ac03f9e3cbd620bebe35da917ebdcabb289481ad6dc4cc4f1fe62ee"
+    },
+    {
+      "source": "skills/knowledge-management/references/notion-note-steward/workflow.md",
+      "destination": "skills/academic-notes/references/notion-note-steward/workflow.md",
+      "mode": "links-only",
+      "source_sha256": "5fd1cef8f66dada2df7f0cc624ea9d914a98f055e9a578e7f8c67ad1be704140",
+      "destination_sha256": "fe3bacd1d375dc286e8aac8848b8466ec0f06c67448f14bb179ec3fbae2aea2e"
+    },
+    {
+      "source": "skills/knowledge-management/references/notion-note-steward/agents/openai.yaml",
+      "destination": "skills/academic-notes/references/notion-note-steward/agents/openai.yaml",
+      "mode": "byte-exact",
+      "source_sha256": "64b8ef168778eb4f48d7febfd3848b97028e0a3fe21ef9fae6d3202258e5e551",
+      "destination_sha256": "64b8ef168778eb4f48d7febfd3848b97028e0a3fe21ef9fae6d3202258e5e551"
+    },
+    {
+      "source": "skills/knowledge-management/references/notion-note-steward/assets/icon.svg",
+      "destination": "skills/academic-notes/references/notion-note-steward/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "bc9d7301fa266a1e1629286301aad0759c99a116f4f8a0cfe85aed7dbeb74429",
+      "destination_sha256": "bc9d7301fa266a1e1629286301aad0759c99a116f4f8a0cfe85aed7dbeb74429"
+    },
+    {
+      "source": "skills/knowledge-management/references/notion-note-steward/references/academic-sources.md",
+      "destination": "skills/academic-notes/references/notion-note-steward/references/academic-sources.md",
+      "mode": "links-only",
+      "source_sha256": "c27069a83697c6ee372cd2a525d420a8e8cc79f67d73ea866cde90ede885ffd1",
+      "destination_sha256": "c27069a83697c6ee372cd2a525d420a8e8cc79f67d73ea866cde90ede885ffd1"
+    },
+    {
+      "source": "skills/knowledge-management/references/notion-note-steward/references/completion-workflow.md",
+      "destination": "skills/academic-notes/references/notion-note-steward/references/completion-workflow.md",
+      "mode": "links-only",
+      "source_sha256": "f36b4a135dd43ee7319ac17f42f458f166139eb494e4a865c3d0bfcffbfb2523",
+      "destination_sha256": "f36b4a135dd43ee7319ac17f42f458f166139eb494e4a865c3d0bfcffbfb2523"
+    },
+    {
+      "source": "skills/knowledge-management/references/notion-note-steward/references/format-guide.md",
+      "destination": "skills/academic-notes/references/notion-note-steward/references/format-guide.md",
+      "mode": "links-only",
+      "source_sha256": "c2d9cd04043c73b1aa0cc9ba8cc5e94b2e7aa6506a019594065c7e23c90d4d19",
+      "destination_sha256": "f2a252c1c07be808ddb5cbfa2a7f49e92586a6081907f87fa0927ae5bf6c01d1"
+    },
+    {
+      "source": "skills/knowledge-management/references/notion-academic-database-manager/agents/openai.yaml",
+      "destination": "skills/academic-notes/references/notion-academic-database-manager/agents/openai.yaml",
+      "mode": "byte-exact",
+      "source_sha256": "17f46a3740b030afab9f08666073921e3de3345137247e252c5d6b7433f6f126",
+      "destination_sha256": "17f46a3740b030afab9f08666073921e3de3345137247e252c5d6b7433f6f126"
+    },
+    {
+      "source": "skills/knowledge-management/references/notion-academic-database-manager/assets/icon.svg",
+      "destination": "skills/academic-notes/references/notion-academic-database-manager/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "cbe18342c21265e51f9afe5269e565cb5015da3b5df9d929cce13481be8d321e",
+      "destination_sha256": "cbe18342c21265e51f9afe5269e565cb5015da3b5df9d929cce13481be8d321e"
+    },
+    {
+      "source": "skills/knowledge-management/references/academic-illustration/agents/openai.yaml",
+      "destination": "skills/academic-notes/references/academic-illustration/agents/openai.yaml",
+      "mode": "byte-exact",
+      "source_sha256": "6dbcdd8d287b28a2b0e5a58f4129bba700b222877f6c63685ec57d019b10812b",
+      "destination_sha256": "6dbcdd8d287b28a2b0e5a58f4129bba700b222877f6c63685ec57d019b10812b"
+    },
+    {
+      "source": "skills/finance-management/agents/openai.yaml",
+      "destination": "references/architecture-history/0.5.0/skills/finance-management/agents/openai.yaml",
+      "mode": "archive-exact",
+      "source_sha256": "9244cbbce7d48b2c05ef453737182c9d3b2c026f675e23194507410ca027c90c",
+      "destination_sha256": "9244cbbce7d48b2c05ef453737182c9d3b2c026f675e23194507410ca027c90c"
+    },
+    {
+      "source": "skills/finance-management/assets/icon.svg",
+      "destination": "skills/finance-management/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "f8b8e6dd9c2c6a4228d4901d75102df49fb3413f517855614604c817e6a3cb1c",
+      "destination_sha256": "f8b8e6dd9c2c6a4228d4901d75102df49fb3413f517855614604c817e6a3cb1c"
+    },
+    {
+      "source": "skills/finance-management/references/cashflow.md",
+      "destination": "skills/finance-management/references/cashflow.md",
+      "mode": "links-only",
+      "source_sha256": "3107652e12c0dce3edc4228bdc97951b391bdfcffa5a09f28c185bbb78bc4306",
+      "destination_sha256": "3107652e12c0dce3edc4228bdc97951b391bdfcffa5a09f28c185bbb78bc4306"
+    },
+    {
+      "source": "skills/finance-management/references/portfolio.md",
+      "destination": "skills/finance-management/references/portfolio.md",
+      "mode": "links-only",
+      "source_sha256": "42bb1129c82e3f608c3bd79c5d12ecde6ca7d4d4a770fa91a63dfdf755d96d23",
+      "destination_sha256": "42bb1129c82e3f608c3bd79c5d12ecde6ca7d4d4a770fa91a63dfdf755d96d23"
+    },
+    {
+      "source": "skills/creative-management/agents/openai.yaml",
+      "destination": "references/architecture-history/0.5.0/skills/creative-management/agents/openai.yaml",
+      "mode": "archive-exact",
+      "source_sha256": "2c1e61fd06376d8cc01bb5f2e983b4dbed13c9529ddd7d1245c639f7b45c3e2f",
+      "destination_sha256": "2c1e61fd06376d8cc01bb5f2e983b4dbed13c9529ddd7d1245c639f7b45c3e2f"
+    },
+    {
+      "source": "skills/creative-management/assets/icon.svg",
+      "destination": "skills/creative-management/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "454730a070f594819f83586a337a6cc53420931961dae522587a0aa5a3b53f09",
+      "destination_sha256": "454730a070f594819f83586a337a6cc53420931961dae522587a0aa5a3b53f09"
+    },
+    {
+      "source": "skills/creative-management/references/company-logo/workflow.md",
+      "destination": "skills/industry-notes/references/company-logo/workflow.md",
+      "mode": "links-only",
+      "source_sha256": "1fce8a94c1737eb4ac42f87dd662e9bd308ab0608861e06aae733a071618bdaf",
+      "destination_sha256": "1fce8a94c1737eb4ac42f87dd662e9bd308ab0608861e06aae733a071618bdaf"
+    },
+    {
+      "source": "skills/creative-management/references/notion-cover-designer/workflow.md",
+      "destination": "skills/industry-notes/references/notion-cover-designer/workflow.md",
+      "mode": "links-only",
+      "source_sha256": "3dc8d428d2322897c64fdd3424f1509a053f6195d12780ed743fe9383e1a04a5",
+      "destination_sha256": "3dc8d428d2322897c64fdd3424f1509a053f6195d12780ed743fe9383e1a04a5"
+    },
+    {
+      "source": "skills/creative-management/references/photorealistic-discipline-cover/workflow.md",
+      "destination": "skills/academic-notes/references/photorealistic-discipline-cover/workflow.md",
+      "mode": "links-only",
+      "source_sha256": "10a39d3806337a31ae01b038ed574a6355d8b83d73f50260785abb9c6616936a",
+      "destination_sha256": "10a39d3806337a31ae01b038ed574a6355d8b83d73f50260785abb9c6616936a"
+    },
+    {
+      "source": "skills/creative-management/references/secondary-discipline-cover/workflow.md",
+      "destination": "skills/academic-notes/references/secondary-discipline-cover/workflow.md",
+      "mode": "links-only",
+      "source_sha256": "6dffc19ba854d31835656209c5d9ae824080e68c7e5112afc0850457268c60ff",
+      "destination_sha256": "6dffc19ba854d31835656209c5d9ae824080e68c7e5112afc0850457268c60ff"
+    },
+    {
+      "source": "skills/creative-management/references/secondary-discipline-cover/agents/openai.yaml",
+      "destination": "skills/academic-notes/references/secondary-discipline-cover/agents/openai.yaml",
+      "mode": "byte-exact",
+      "source_sha256": "aa8a68561299857631a7501ad7cc9023934a39f0de89c2a55be96e5064ca7850",
+      "destination_sha256": "aa8a68561299857631a7501ad7cc9023934a39f0de89c2a55be96e5064ca7850"
+    },
+    {
+      "source": "skills/creative-management/references/secondary-discipline-cover/assets/civil-engineering.png",
+      "destination": "skills/academic-notes/references/secondary-discipline-cover/assets/civil-engineering.png",
+      "mode": "byte-exact",
+      "source_sha256": "03dc8cb3c4a4619ebfe9bc788bd56f0d546ac4366bf4bdca529334b45063d6da",
+      "destination_sha256": "03dc8cb3c4a4619ebfe9bc788bd56f0d546ac4366bf4bdca529334b45063d6da"
+    },
+    {
+      "source": "skills/creative-management/references/secondary-discipline-cover/assets/computer-systems.png",
+      "destination": "skills/academic-notes/references/secondary-discipline-cover/assets/computer-systems.png",
+      "mode": "byte-exact",
+      "source_sha256": "7ca21878c5468ce8b01fe7fe376003d96ac0a54a3afa3f40f17ba6669dd5f294",
+      "destination_sha256": "7ca21878c5468ce8b01fe7fe376003d96ac0a54a3afa3f40f17ba6669dd5f294"
+    },
+    {
+      "source": "skills/creative-management/references/secondary-discipline-cover/assets/electrical-engineering.png",
+      "destination": "skills/academic-notes/references/secondary-discipline-cover/assets/electrical-engineering.png",
+      "mode": "byte-exact",
+      "source_sha256": "afe6352bd9d9a25ade843a1884cb7f8e6a2425faa524fb4fb67f64ad98f2f82e",
+      "destination_sha256": "afe6352bd9d9a25ade843a1884cb7f8e6a2425faa524fb4fb67f64ad98f2f82e"
+    },
+    {
+      "source": "skills/creative-management/references/secondary-discipline-cover/assets/harmonic-analysis-approved.png",
+      "destination": "skills/academic-notes/references/secondary-discipline-cover/assets/harmonic-analysis-approved.png",
+      "mode": "byte-exact",
+      "source_sha256": "309dfccb4d017db273660696f1b1845e0b95b7f662bd708843b350d92ec4901c",
+      "destination_sha256": "309dfccb4d017db273660696f1b1845e0b95b7f662bd708843b350d92ec4901c"
+    },
+    {
+      "source": "skills/creative-management/references/secondary-discipline-cover/assets/icon.svg",
+      "destination": "skills/academic-notes/references/secondary-discipline-cover/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "454730a070f594819f83586a337a6cc53420931961dae522587a0aa5a3b53f09",
+      "destination_sha256": "454730a070f594819f83586a337a6cc53420931961dae522587a0aa5a3b53f09"
+    },
+    {
+      "source": "skills/creative-management/references/secondary-discipline-cover/assets/mechanical-engineering.png",
+      "destination": "skills/academic-notes/references/secondary-discipline-cover/assets/mechanical-engineering.png",
+      "mode": "byte-exact",
+      "source_sha256": "c51c9b67d929a4ac741fe1fb16e2af649e95ef4f33fd0f0faacf20602027ed49",
+      "destination_sha256": "c51c9b67d929a4ac741fe1fb16e2af649e95ef4f33fd0f0faacf20602027ed49"
+    },
+    {
+      "source": "skills/creative-management/references/secondary-discipline-cover/references/prompt-template.md",
+      "destination": "skills/academic-notes/references/secondary-discipline-cover/references/prompt-template.md",
+      "mode": "links-only",
+      "source_sha256": "abf1471dc12e9eab23769da44bd90e68d905b18a1f665583439b7356e2741d99",
+      "destination_sha256": "abf1471dc12e9eab23769da44bd90e68d905b18a1f665583439b7356e2741d99"
+    },
+    {
+      "source": "skills/creative-management/references/photorealistic-discipline-cover/agents/openai.yaml",
+      "destination": "skills/academic-notes/references/photorealistic-discipline-cover/agents/openai.yaml",
+      "mode": "byte-exact",
+      "source_sha256": "0c4abb57d458f88af169a6a6643ed96593de718c446ec222014997529f10e1c9",
+      "destination_sha256": "0c4abb57d458f88af169a6a6643ed96593de718c446ec222014997529f10e1c9"
+    },
+    {
+      "source": "skills/creative-management/references/photorealistic-discipline-cover/assets/chemical-engineering-photo.png",
+      "destination": "skills/academic-notes/references/photorealistic-discipline-cover/assets/chemical-engineering-photo.png",
+      "mode": "byte-exact",
+      "source_sha256": "bc653c61977a0d27bcb707aca0f13dd54dfe1837b183002ce05a222e146b0406",
+      "destination_sha256": "bc653c61977a0d27bcb707aca0f13dd54dfe1837b183002ce05a222e146b0406"
+    },
+    {
+      "source": "skills/creative-management/references/photorealistic-discipline-cover/assets/icon.svg",
+      "destination": "skills/academic-notes/references/photorealistic-discipline-cover/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "ea392a6ad5973a4a5adaa408d884bfba7fd9bddf9cac92eddccf9ca0ad0eced7",
+      "destination_sha256": "ea392a6ad5973a4a5adaa408d884bfba7fd9bddf9cac92eddccf9ca0ad0eced7"
+    },
+    {
+      "source": "skills/creative-management/references/photorealistic-discipline-cover/assets/industrial-engineering-photo.png",
+      "destination": "skills/academic-notes/references/photorealistic-discipline-cover/assets/industrial-engineering-photo.png",
+      "mode": "byte-exact",
+      "source_sha256": "a77aed1b73122bfbafaae8b237e8add487d3dd127c6bff7d0f9e3136bfe74493",
+      "destination_sha256": "a77aed1b73122bfbafaae8b237e8add487d3dd127c6bff7d0f9e3136bfe74493"
+    },
+    {
+      "source": "skills/creative-management/references/photorealistic-discipline-cover/assets/materials-science-photo.png",
+      "destination": "skills/academic-notes/references/photorealistic-discipline-cover/assets/materials-science-photo.png",
+      "mode": "byte-exact",
+      "source_sha256": "ae7d042a1f445555f96bffb74a205fce3aa2b9d8bfcdb850531bd294fbb697e1",
+      "destination_sha256": "ae7d042a1f445555f96bffb74a205fce3aa2b9d8bfcdb850531bd294fbb697e1"
+    },
+    {
+      "source": "skills/creative-management/references/photorealistic-discipline-cover/references/prompt-template.md",
+      "destination": "skills/academic-notes/references/photorealistic-discipline-cover/references/prompt-template.md",
+      "mode": "links-only",
+      "source_sha256": "6f213e17c9ac3a484d928f28c2fa3ddb147cc792c19d411506cfdc8be7b70e20",
+      "destination_sha256": "6f213e17c9ac3a484d928f28c2fa3ddb147cc792c19d411506cfdc8be7b70e20"
+    },
+    {
+      "source": "skills/creative-management/references/notion-cover-designer/agents/openai.yaml",
+      "destination": "skills/industry-notes/references/notion-cover-designer/agents/openai.yaml",
+      "mode": "byte-exact",
+      "source_sha256": "820f32fa6c65741a35efa84c9fab48755de85ecbbc4888d0a5f6bafb65dd6e10",
+      "destination_sha256": "820f32fa6c65741a35efa84c9fab48755de85ecbbc4888d0a5f6bafb65dd6e10"
+    },
+    {
+      "source": "skills/creative-management/references/notion-cover-designer/assets/icon.svg",
+      "destination": "skills/industry-notes/references/notion-cover-designer/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "de9ab28bad590e84f4e635aee6860e42b290e18e1230979a135db99f6302cba1",
+      "destination_sha256": "de9ab28bad590e84f4e635aee6860e42b290e18e1230979a135db99f6302cba1"
+    },
+    {
+      "source": "skills/creative-management/references/notion-cover-designer/references/cover-style.md",
+      "destination": "skills/industry-notes/references/notion-cover-designer/references/cover-style.md",
+      "mode": "links-only",
+      "source_sha256": "b5647fa6e4f46c8a50d9c5189d4e733cb06265361ceb144f212e06857db4802e",
+      "destination_sha256": "b5647fa6e4f46c8a50d9c5189d4e733cb06265361ceb144f212e06857db4802e"
+    },
+    {
+      "source": "skills/creative-management/references/company-logo/agents/openai.yaml",
+      "destination": "skills/industry-notes/references/company-logo/agents/openai.yaml",
+      "mode": "byte-exact",
+      "source_sha256": "3f704aea31e00fc0c0500d82837fc2127e619eee70e117de0141080bc460316a",
+      "destination_sha256": "3f704aea31e00fc0c0500d82837fc2127e619eee70e117de0141080bc460316a"
+    },
+    {
+      "source": "skills/creative-management/references/company-logo/assets/icon.svg",
+      "destination": "skills/industry-notes/references/company-logo/assets/icon.svg",
+      "mode": "byte-exact",
+      "source_sha256": "e6259a5ac07805e44bf6391f06287779c03377c67bbf6ae9099682648c4c69cc",
+      "destination_sha256": "e6259a5ac07805e44bf6391f06287779c03377c67bbf6ae9099682648c4c69cc"
+    },
+    {
+      "source": "skills/creative-management/references/company-logo/references/logo-image.md",
+      "destination": "skills/industry-notes/references/company-logo/references/logo-image.md",
+      "mode": "links-only",
+      "source_sha256": "6bc49e8f85bca01410534978610bd1b0b7987482692d5eacb2886115c4f4f38d",
+      "destination_sha256": "6bc49e8f85bca01410534978610bd1b0b7987482692d5eacb2886115c4f4f38d"
+    },
+    {
+      "source": "references/original-manifests/codex-plugin-0.4.21.json",
+      "destination": "references/original-manifests/codex-plugin-0.4.21.json",
+      "mode": "byte-exact",
+      "source_sha256": "b4e78a515d11bb8941d00d16cafce610206727d89c4748e8ccad6cbe52ec6005",
+      "destination_sha256": "b4e78a515d11bb8941d00d16cafce610206727d89c4748e8ccad6cbe52ec6005"
+    },
+    {
+      "source": "references/original-manifests/plugin-0.4.21.json",
+      "destination": "references/original-manifests/plugin-0.4.21.json",
+      "mode": "byte-exact",
+      "source_sha256": "da7de9f8bfa25a31f194aa13aa6e9897bef4c70944e9eddd187f56ef89df9004",
+      "destination_sha256": "da7de9f8bfa25a31f194aa13aa6e9897bef4c70944e9eddd187f56ef89df9004"
+    }
+  ],
+  "latest_user_changes_preserved": "industry-notes/references/notion-company-steward/references/company-database-fields.md"
+}

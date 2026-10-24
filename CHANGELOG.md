@@ -6,6 +6,21 @@ Version notes preserved from the previous README. The 0.4.21 entry describes loc
 
 以下版本说明从旧首页完整迁入；0.4.21 为本地源码说明，此记录不代表已发布 GitHub Release。
 
+## 0.5.1 · Academic notes and six-domain architecture · 2026-10-23
+
+- 一级入口前两位改为学科笔记 `$academic-notes`、行业笔记 `$industry-notes`；后续为金融、日程、学习、创作。
+- 学科图解封面和写实封面归学科笔记；行业封面与公司 Logo 归行业笔记，模块、模板和资源完整迁移。创作管理负责个人博客、抖音和小红书作品，各有独立 Markdown。
+- 保留用户发布 0.5.0 后的企业字段手动修改、其他现有规则与资源；旧入口、清单、索引和改写前文档留档，不使用旧缓存覆盖维护源码。迁移哈希记录初迁快照，后续规则以当前模块为准。
+- 学科笔记限定为 Notion 学科知识库，按任务读取完整模块；一级实质章节优先 4–7 章、以 5–6 章为佳，英文命名优先 1–4 词、以 2–3 词为佳。H1 英文独立单词 `and` 不区分大小写统一写为 `&`。
+- 固定导论开头为 INTRODUCTION 导论 → A. Overview → a. Definition，下接原生小写罗马数字列表 Definition、Position。首项固定为“简称, 全称, 解释”，无通行简称时写“全称, 解释”，分隔为半角逗号加一个空格。Position 按需简述上级归属、相邻边界和体系作用。
+- Core Questions 按需作为 Position 后的第五级列表项；起源或历史仅在一级学科确有需要时考虑，末端专题笔记不默认添加。移除重复的 Related Disciplines 章节示例，详细学科联系继续使用右侧 Connections。
+- 导论固定 Overview 左、当前学科封面右，H1 在双栏外；新建双栏默认 6:4，可选 5:5 或 7:3。保留已有比例和用户手动布局，约 5 行只作视觉参考，不自动触发重排，知识单元完整与图文对应优先。
+- 普通知识条目的 Definition 默认优先、按实际内容判断；第五级继续使用原生罗马数字列表承载属性解释或最小术语，Formal Definition 通常用于数学，不强制给每个概念套满属性。
+- 学科数据库默认视图统一为学科概览 Gallery、学科信息 Table。分类字段统一为学科分支，保留选项与字段类型；学科层级仅表示层级编号，角色信息另行保留，不自动转换或合并；移除学科成绩相关要求。
+- 已授权数据库维护仅将空白学习进度初始化为 0%，已有值不动、不估算。学科难度以 Felix 个人学习感受为准；新建时默认继承直属上级难度，上级未填则留空，已有评级不动。
+- 学科主题色不设默认占位选项；新建或获准补填空白时，可依据已有背景色或学科相关元素先选九种颜色之一，保留已有值及用户手动修正。Gallery 卡片隐藏该字段，Table 和打开的笔记页面显示。
+- 更新中英文 README、安装说明与验收案例，同步 GitHub 源码和本地安装。入口顺序由索引与文档表达，宿主列表排序由界面控制；新会话真实行为及业务页面视觉显示仍按实际任务另行验证。
+
 ## 0.5.0 · Six editable domain entries · 2026-10-23
 
 - Expose Knowledge, Finance, Planning, Learning, Research, and Creative as six callable Skills.
@@ -30,7 +45,7 @@ Version notes preserved from the previous README. The 0.4.21 entry describes loc
 
 ## 0.4.18
 
-在学科笔记 Skill 中新增[数学概念的解释规范](plugins/felix-workflows/skills/knowledge-management/references/notion-note-steward/workflow.md#数学概念的解释规范)：Definition 使用固定双语句式, 适用的 Formal Definition 写明前提并框选公式, 其余讲解角度按需选择；附单态射示例与行为验收案例。规则更新不自动修改历史 Notion 页面。
+在学科笔记 Skill 中新增[数学概念的解释规范](plugins/felix-workflows/skills/academic-notes/references/notion-note-steward/workflow.md#数学概念的解释规范)：Definition 使用固定双语句式, 适用的 Formal Definition 写明前提并框选公式, 其余讲解角度按需选择；附单态射示例与行为验收案例。规则更新不自动修改历史 Notion 页面。
 
 ## 0.4.17 — 一流教材与讲义参考
 
@@ -50,7 +65,7 @@ Version notes preserved from the previous README. The 0.4.21 entry describes loc
 
 ## 0.4.14 — 完整覆盖、内容深度与完成验收
 
-- 学科、行业和公司笔记统一读取[完整覆盖与完成标准](plugins/felix-workflows/skills/knowledge-management/references/notion-note-steward/references/completion-workflow.md)，完整检查指定范围，按质量补齐，分批执行到完成。
+- 学科、行业和公司笔记统一读取[完整覆盖与完成标准](plugins/felix-workflows/skills/academic-notes/references/notion-note-steward/references/completion-workflow.md)，完整检查指定范围，按质量补齐，分批执行到完成。
 - 承接已接受方案，交付前检查遗漏与前后一致性，分别报告内容回读和视觉验收；保留只读建议、局部任务及公司简短概览边界。
 - 合并本机已有的右侧学科联系、60:40 双栏、H1 全宽与流程图 Display 规则，保留 0.4.13 的父页模板、学习进度和十三项技能。
 - 增加整篇、整库、局部、写入失败和视觉受限等验收场景。静态检查不保证每次模型输出都达标，后续真实使用仍需按覆盖清单验收。
