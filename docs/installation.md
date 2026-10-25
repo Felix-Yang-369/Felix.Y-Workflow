@@ -2,10 +2,10 @@
 
 [English README](../README.md) · [中文首页](../README.zh-CN.md)
 
-Current version: **0.5.1**, with six callable Skills and all 13 original workflows preserved as editable modules. The repository is `Felix-Yang-369/Felix.Y-Workflow`; the marketplace and plugin IDs remain `felix-workflows`. The commands below require a Codex CLI that includes `codex plugin`.
+Current version: **0.5.2**, with six callable Skills and all 13 original workflows preserved as editable modules. The repository is `Felix-Yang-369/Felix.Y-Workflow`; the marketplace and plugin IDs remain `felix-workflows`. The commands below require a Codex CLI that includes `codex plugin`.
 
-> Version 0.5.1 includes the six-entry architecture and confirmed academic-note refinements. Both GitHub and editable-source installation are supported; preserve your own source edits before updating.
-> 0.5.1 包含六类入口架构和本轮确认的学科笔记规则，可从 GitHub 或可编辑源码安装；更新前保留自己的源码修改。
+> Version 0.5.2 includes the six-entry architecture and confirmed academic-note refinements. Both GitHub and editable-source installation are supported; preserve your own source edits before updating.
+> 0.5.2 包含六类入口架构和本轮确认的学科笔记规则，可从 GitHub 或可编辑源码安装；更新前保留自己的源码修改。
 
 ## Install from GitHub
 
@@ -83,11 +83,11 @@ If similarly named standalone Skills or an older plugin are present, compare the
 codex plugin list --marketplace felix-workflows --json
 ```
 
-Check `version: "0.5.1"`, `installed: true`, and `enabled: true`, plus the expected source directory. Compare source and cache files when preserving local edits, then test a harmless workflow in a new conversation. File consistency, actual Skill behavior, and visual checks of changed business pages are separate forms of verification.
+Check `version: "0.5.2"`, `installed: true`, and `enabled: true`, plus the expected source directory. Compare source and cache files when preserving local edits, then test a harmless workflow in a new conversation. File consistency, actual Skill behavior, and visual checks of changed business pages are separate forms of verification.
 
 ## 中文说明
 
-当前版本为 **0.5.1**，包含六类入口、完整保留的 13 个原工作流模块和两份新增金融方法。安装命令见上方；仓库名为 `Felix.Y-Workflow`，插件与市场标识继续使用 `felix-workflows`。调用时使用上方六个入口，旧名用于查找模块。
+当前版本为 **0.5.2**，包含六类入口、完整保留的 13 个原工作流模块和两份新增金融方法。安装命令见上方；仓库名为 `Felix.Y-Workflow`，插件与市场标识继续使用 `felix-workflows`。调用时使用上方六个入口，旧名用于查找模块。
 
 需要自行编辑时，克隆到自己控制的位置，进入该目录执行 `codex plugin marketplace add .`，再安装插件。用 `codex plugin marketplace list` 确认当前注册的来源；如果同名市场指向 GitHub 或别的目录，先保留该来源的修改，再按上方“切换来源”命令移除市场注册并登记本地目录。长期修改保存到 `plugins/felix-workflows/`，入口 `SKILL.md` 和详细 `workflow.md` 可分别编辑，保存后重新安装，并在新聊天验证。
 
@@ -97,6 +97,6 @@ GitHub 来源使用上方 `marketplace upgrade` 命令；本地来源自行更�
 
 存在同名独立 Skill 或旧安装时，先比较全部文件，保留独有规则，确认插件可用并备份，再停用已被覆盖的副本。安装文件一致、真实会话行为和业务页面视觉显示分别验收。
 
-0.5.1 的[迁移说明](six-domain-migration.md)和[自定义指南](customization.md)列出了完整文件对应与最新规则的保留方式。本轮已确认的规则以当前学科笔记模块为准；安装或更新不会擅自处理其他尚未确认的规则差异。
+架构[迁移说明](six-domain-migration.md)和[自定义指南](customization.md)列出了完整文件对应与最新规则的保留方式。本轮已确认的规则以当前学科笔记模块为准；安装或更新不会擅自处理其他尚未确认的规则差异。
 
 前两个入口现在为 `$academic-notes` 学科笔记、`$industry-notes` 行业笔记；四个笔记视觉模块归入对应入口。`$creative-management` 用于个人博客、抖音和小红书作品。完整分工见[架构说明](architecture.md)。

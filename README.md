@@ -6,7 +6,7 @@
   </picture>
 
   <p>Your personal workflow library, built from editable Markdown.</p>
-  <p><strong>0.5.1 · Academic Notes and Industry Notes first</strong></p>
+  <p><strong>0.5.2 · Academic Notes and Industry Notes first</strong></p>
   <p><strong>English</strong> · <a href="README.zh-CN.md">简体中文</a></p>
   <p><a href="#quick-start">Quick Start</a> · <a href="#six-domains">Six Domains</a> · <a href="#customize-your-workflow">Customize</a> · <a href="#documentation">Documentation</a></p>
 </div>
@@ -21,7 +21,7 @@ FELIX WORKFLOW packages Felix's repeatable workflows into one Codex plugin. It b
 
 ## Six Domains
 
-**Version 0.5.1 exposes six entries, with Academic Notes and Industry Notes first.** All 13 original workflow modules and resources are retained, with user-approved rule refinements. Note covers and company logos belong to the corresponding note entry; Creative manages personal blog, Douyin, and Xiaohongshu works.
+**Version 0.5.2 exposes six entries, with Academic Notes and Industry Notes first.** All 13 original workflow modules and resources are retained, with user-approved rule refinements. Note covers and company logos belong to the corresponding note entry; Creative manages personal blog, Douyin, and Xiaohongshu works.
 
 | Order | Domain entry | Invoke | Responsibility | Editable modules |
 |:--|:--|:--|:--|:--|
@@ -32,9 +32,18 @@ FELIX WORKFLOW packages Felix's repeatable workflows into one Codex plugin. It b
 | 5 | [Learning](plugins/felix-workflows/skills/learning-management/SKILL.md) | `$learning-management` | Concepts, systems, and course-fit decisions | [3 preserved modules](docs/workflows.md#learning) |
 | 6 | [Creative](plugins/felix-workflows/skills/creative-management/SKILL.md) | `$creative-management` | Personal blog, Douyin, and Xiaohongshu works | [3 platform modules](docs/workflows.md#creative) |
 
-> Version 0.5.1 is available from GitHub and editable local source. For source you can maintain yourself, follow the [local installation guide](docs/installation.md).
+> Version 0.5.2 is available from GitHub and editable local source. For source you can maintain yourself, follow the [local installation guide](docs/installation.md).
 
 Academic-note rules now include the fixed Introduction template and cover columns, optional fifth-level Core Questions, preserved user layouts, H1 `and` → `&`, and the confirmed database fields, progress, difficulty, and theme-color rules. See the [changelog](CHANGELOG.md) for the full update.
+
+**New in 0.5.2 — academic-note details**
+
+- Put important formulas in fifth-level Roman-list items: a bold title, then one clean inline `$oxed{...}$`, then explanations on the next body line.
+- Start new body columns at the left H3, keeping its H4s and content together; the right examples or images start alongside it. Preserve existing layouts and the Introduction's H2 Overview / cover exception.
+- Keep left-side Examples as concise word or name lists; use the right side for complete explanations of the concept.
+- Start considering H4 groups when an ungrouped H3 has more than six fifth-level items. Choose explanation angles by need, with no default count; merge repetition.
+- Keep Connections sparse, usually as an optional block below the Introduction cover. Avoid repeating them in every chapter.
+- Add no source captions to note illustrations. Add one brief explanatory line only when the image is unclear on its own; do not repeat explanations already inside the image.
 
 ## Quick Start
 
